@@ -1,0 +1,31 @@
+
+//Incomplete
+1) Testing is a processs of demosntrating that error are not present.
+2) The purpose of testing is to show that a program performs its intended funtion correctlty for which domain.
+
+// Correct
+3) Testing is a process of executing a program with the intent of finding error.
+
+Error : 
+Misunderstanding of technical specifications. it may be a logical error.
+Types :
+	
+	
+Bug : 
+Developers make mistakes while coding.. or a error in last phse moving onto next phase
+
+Fault : 
+Any Kind of defect like coding,cdesigning specification.
+
+Failure :
+	when a fault executes a failure.
+	
+*	Types of testing :
+	
+	1) Black Box Teasting :
+		I/p => O/p
+		
+	1a) BVA :
+	1b)Robustness
+	1c) Worst cases
+

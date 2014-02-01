@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html class="js" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" dir="ltr" lang="en"><script async="" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/beacon.js"></script><script id="abine.stub.Google Analytics">var abPrm={};var abNoOp=function(i,a){return (a&&a.length?a[0]:null)||true;},abSC=function(n,v){document.cookie=n+'='+v+';path=/;expires='+(new Date((new Date()).getTime()+(30000*60*60*24))).toGMTString();},abGC=function(n){return document.cookie.indexOf(n+'=')!=-1;},abAddNoOpMethods=function(o,m){m=m.split(',');for(var i=0;i<m.length;i++){if(m[i].match(/^#/)){o['get'+m[i].substr(1)]=o['set'+m[i].substr(1)]=abNoOp;}else{o[m[i]]=abNoOp;}}};var abClickEvent=function(n){if(n.click){n.click();}else{var e=n.ownerDocument.createEvent('MouseEvents');e.initMouseEvent('click',true, true, n.ownerDocument.defaultView, 1,0,0,0,0,false,false,false,false,0,null);n.dispatchEvent(e);}};var abTrkr={},abGT=function(){return abTrkr},_gat={_getTracker:abGT,_createTracker:abGT,_getTrackerByName:abGT,_anonymizeIp:abNoOp},__utmSetTrans=__utmLinkerUrl=__utmLinkPost=__utmSetVar=__utmVisitorCode=abNoOp,_gaq={_createAsyncTracker:abTrkr,_getAsyncTracker:abTrkr,push:function(a){for (var b = arguments, c = 0, d = 0; d < b.length; d++) {try {if (typeof b[d] === 'function') b[d]();else {var e = '', f = b[d][0], k = f.lastIndexOf('.');k > 0 && (e = f[z](0, k), f = f[z](k + 1));var p = e == '_gat' ? _gat : e == '_gaq' ? _gaq : _gat._getTracker(e);p[f].apply(p, b[d].slice(1))}} catch (r) {c++}}return c;}};abAddNoOpMethods(abTrkr,'_deleteCustomVar,_getName,_getAccount,_getVersion,_getVisitorCustomVar,_initData,_setAccount,_setCookiePersistence,_setCustomVar,_setSampleRate,_setSessionTimeout,_setSessionCookieTimeout,_setVar,_setVisitorCookieTimeout,_trackPageview,_setAllowAnchor,_setCampContentKey,_setCampMediumKey,_setCampNameKey,_setCampNOKey,_setCampSourceKey,_setCampTermKey,_setCampaignTrack,_setCampaignCookieTimeout,_setCookieTimeout,_setReferrerOverride,_cookiePathCopy,_getLinkerUrl,_linkByPost,_setAllowHash,_setAllowLinker,_setCookiePath,_setDomainName,_addItem,_addTrans,_trackTrans,_trackEvent,_addIgnoredOrganic,_addIgnoredRef,_addOrganic,_clearIgnoredOrganic,_clearIgnoredRef,_clearOrganic,_trackSocial,_getClientInfo,_getDetectFlash,_getDetectTitle,_setClientInfo,_setDetectFlash,_setDetectTitle,_getLocalGifPath,_getServiceMode,_setLocalGifPath,_setLocalRemoteServerMode,_setLocalServerMode,_setRemoteServerMode,_trackPageLoadTime,_addDevId');abTrkr._link=__utmLinker=function(l){if(l)location.href=l;};if(typeof(urchinTracker)=='undefined')urchinTracker=abNoOp;</script><div abpl="1" viastub="1" id="abPLFBH" style="display: none;"></div><script id="abine.stub.Facebook Connect">var abPrm={"http://www.codechef.com/sites/all/modules/fbconnect/fbconnect.js":"","x":""};var abNoOp=function(i,a){return (a&&a.length?a[0]:null)||true;},abSC=function(n,v){document.cookie=n+'='+v+';path=/;expires='+(new Date((new Date()).getTime()+(30000*60*60*24))).toGMTString();},abGC=function(n){return document.cookie.indexOf(n+'=')!=-1;},abAddNoOpMethods=function(o,m){m=m.split(',');for(var i=0;i<m.length;i++){if(m[i].match(/^#/)){o['get'+m[i].substr(1)]=o['set'+m[i].substr(1)]=abNoOp;}else{o[m[i]]=abNoOp;}}};var abClickEvent=function(n){if(n.click){n.click();}else{var e=n.ownerDocument.createEvent('MouseEvents');e.initMouseEvent('click',true, true, n.ownerDocument.defaultView, 1,0,0,0,0,false,false,false,false,0,null);n.dispatchEvent(e);}};var FB=FBConnect={Event:{},XFBML:{},Cookie:{},Canvas:{EarlyFlush:{addResource:abNoOp}},Data:{}},facebook_onload=abNoOp;abAddNoOpMethods(FB,'init,logout,api,ui');FB.login=function(cb,scope){var p=document.getElementById('abPLFBH');if(p)abClickEvent(p);};FB.getAuthResponse=FB.getLoginStatus=FB.requireSession=FB.getSession=FB.getUserID=function(){return '';};FB.Connect=FB;abAddNoOpMethods(FB.Event,'subscribe,unsubscribe,monitor');FB.XFBML.parse=abNoOp;abAddNoOpMethods(FB.Data,'query,waitOn');abAddNoOpMethods(FB.Canvas,'getPageInfo,scrollTo,setAutoResize,setDoneLoading,setSize,startTimer,stopTimer');var FB_RequireFeatures=abNoOp;/*if(window.fbAsyncInit)window.fbAsyncInit();*/</script><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script>
+            var _errs=["4e7c8fce06a9ab05530008e5"];(function(a,b){a.onerror=function(){_errs.push(arguments)};
+                var d=function(){var a=b.createElement("script"),c=b.getElementsByTagName("script")[0];
+                    a.src="//d15qhc0lu1ghnk.cloudfront.net/beacon.js";a.async=!0;
+                    c.parentNode.insertBefore(a,c)};a.addEventListener?a.addEventListener("load",d,!1):
+                    a.attachEvent("onload",d)})(window,document);
+        </script>
+		<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+        <title>Is Bigger Smarter | CodeChef</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="programming, language, algorithm, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM">
+<link rel="shortcut icon" href="http://www.codechef.com/misc/favicon.ico" type="image/x-icon">
+        <link type="text/css" rel="stylesheet" media="all" href="Is%20Bigger%20Smarter%20_%20CodeChef_files/css_01c28a7dc0679b14e1107384822e1c28.css">
+        <link rel="stylesheet" type="text/css" href="Is%20Bigger%20Smarter%20_%20CodeChef_files/acmkanpurproblem.css">
+        <script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/jquery.js"></script>
+<script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/drupal.js"></script>
+<script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/fbconnect.js"></script>
+<script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/fivestar.js"></script>
+<script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/lightbox.js"></script>
+<script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/nice_menus.js"></script>
+<script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/common.js"></script>
+<script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/jquery_002.js"></script>
+<script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/jquery_004.js"></script>
+<script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/tableofcontents.js"></script>
+<script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/codechef_recent_comments.js"></script>
+<script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/textarea.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","fbconnect":{"user_pictures":"allow","language_code":"en_US","app_id":"191217060453","debug":0,"connect_js":"document.location.protocol + '\/\/connect.facebook.net\/en_US\/all.js'","loginout_mode":"manual","invite_name":"CodeChef","fast_reg_mode":0,"fast_reg_autoname":0,"fbuid":null,"user":{"uid":"102389","fbuid":null}},"fivestar":{"titleUser":"Your rating: ","titleAverage":"Average: ","feedbackSavingVote":"Saving your vote...","feedbackVoteSaved":"Your vote has been saved.","feedbackDeletingVote":"Deleting your vote...","feedbackVoteDeleted":"Your vote has been deleted."},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)sites\/default\/files","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"eeedec","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":1,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":0,"disable_resize":0,"disable_zoom":0,"force_show_nav":0,"show_caption":true,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\u003e\u003ckbd\u003ex\u003c\/kbd\u003e\u003c\/a\u003e to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":500,"iframe_height":70,"iframe_border":1,"enable_video":0}});
+//--><!]]>
+</script>
+        <meta property="og:title" content="Is Bigger Smarter">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://www.codechef.com/TCSP2013/problems/BGSM">
+        <meta property="og:image" content="http://www.codechef.com/misc/fb-chef.gif">
+        <meta property="og:site_name" content="CodeChef">
+        <meta property="fb:app_id" content="155442717838457">
+
+		<script type="text/javascript">
+				</script>
+
+    </head>
+    <body class="sidebar-right lightbox-processed"><center>
+
+            <div id="header" class="wrapper">
+                <div class="inner-wrapper">
+                    <!-- Header -->
+                    <div id="logo-floater" class="cols-2">
+                        <a href="http://www.codechef.com/" title=""><img src="Is%20Bigger%20Smarter%20_%20CodeChef_files/logo.png" alt="CodeChef is a non-commercial competitive programming community" id="logo"><span></span></a>                    </div>
+                    <div class="cols-2">
+                        <div id="custom-login">
+                                <!--Hello <strong>Admin</strong>, Check your <strong><a href="">Account</a></strong> or <a href="/logout">Log Out</a>-->
+                            <div id="user-bar">
+                <div class="login-user"> 
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                            <td>
+        <span>
+            Hello adityax10! <br>
+            <a href="http://www.codechef.com/users/adityax10" title="Edit Your Account">Account</a>
+            or <a href="http://www.codechef.com/logout">Log Out</a>
+        </span></td>
+                        </tr>
+                    </tbody></table>
+                </div></div>
+        <div id="facebook-login">
+            <table cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td>Login or<br>Signup with</td>
+                    <td><span class="facebook-button"><div class="fb-login-button" size="medium" onlogin="facebook_onlogin_ready();" background="dark" v="2" scope="publish_stream, offline_access">Connect</div></span></td>
+                </tr>
+            </tbody></table>
+        </div>    
+        <div class="question-note">
+            <a href="#">
+                <span class="icon-question">Note</span>
+                <div class="tooltip">
+                    <ul>
+                        <li>Publicize your achievements on your Facebook Wall.</li>
+                        <li>Challenge your friends or ask them for help.</li>
+                    </ul>
+                </div>
+            </a>
+        </div>                        </div>
+
+                        <div id="block-nice_menus-1" class="block block-nice_menus block-header">
+  <div class="content">
+    <h2><span class="nice-menu-hide-title">Site Navigation</span></h2>    <ul class="nice-menu nice-menu-down" id="nice-menu-1"><li id="menu-302" class="menuparent menu-path-problems-easy"><a href="http://www.codechef.com/problems/easy" title="">PRACTICE</a><ul><li id="menu-303" class="menu-path-problems-easy"><a href="http://www.codechef.com/problems/easy" title="">Easy</a></li>
+<li id="menu-304" class="menu-path-problems-medium"><a href="http://www.codechef.com/problems/medium" title="">Medium</a></li>
+<li id="menu-305" class="menu-path-problems-hard"><a href="http://www.codechef.com/problems/hard" title="">Hard</a></li>
+<li id="menu-1819" class="menu-path-problems-challenge"><a href="http://www.codechef.com/problems/challenge" title="">Challenge</a></li>
+<li id="menu-1376" class="menu-path-problems-extcontest"><a href="http://www.codechef.com/problems/extcontest" title="">Peer</a></li>
+</ul>
+</li>
+<li id="menu-309" class="menuparent menu-path-contests"><a href="http://www.codechef.com/contests" title="">COMPETE</a><ul><li id="menu-2203" class="menu-path-www.codechef.com-contests"><a href="http://www.codechef.com/contests" title="">All Contests</a></li>
+<li id="menu-2279" class="menu-path-www.codechef.com-FEB13"><a href="http://www.codechef.com/FEB13" title="">February Challenge 2013</a></li>
+<li id="menu-2278" class="menu-path-www.codechef.com-COOK30"><a href="http://www.codechef.com/COOK30" title="">January Cook-Off 2013</a></li>
+<li id="menu-2274" class="menu-path-www.codechef.com-JAN13"><a href="http://www.codechef.com/JAN13" title="">January Challenge 2013</a></li>
+</ul>
+</li>
+<li id="menu-138" class="menuparent menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">DISCUSS</a><ul><li id="menu-139" class="menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">Forums</a></li>
+<li id="menu-140" class="menu-path-blog.codechef.com-"><a href="http://blog.codechef.com/" title="">Blog</a></li>
+<li id="menu-920" class="menu-path-wiki-"><a href="http://www.codechef.com/wiki/" title="">Wiki</a></li>
+<li id="menu-2202" class="menu-path-https--www.facebook.com-CodeChef"><a href="https://www.facebook.com/CodeChef" title="">Facebook</a></li>
+<li id="menu-141" class="menu-path-www.twitter.com-codechef"><a href="http://www.twitter.com/codechef" title="">Twitter</a></li>
+</ul>
+</li>
+<li id="menu-143" class="menuparent menu-path-node-124098"><a href="http://www.codechef.com/community" title="">COMMUNITY</a><ul><li id="menu-650" class="menu-path-node-124111"><a href="http://www.codechef.com/meetups" title="CodeChef Meetups">CodeChef Meetups</a></li>
+<li id="menu-732" class="menu-path-node-157511"><a href="http://www.codechef.com/campus_chapter/about" title="CodeChef Campus Chapter">Campus Chapters</a></li>
+<li id="menu-733" class="menu-path-node-157517"><a href="http://www.codechef.com/hostyourcontest" title="Hosting Contest on CodeChef">Host your Contest</a></li>
+<li id="menu-146" class="menu-path-node-12"><a href="http://www.codechef.com/usergroups" title="">User Groups</a></li>
+<li id="menu-715" class="menu-path-node-157473"><a href="http://www.codechef.com/techtalks" title="CodeChef TechTalks">CodeChef TechTalks</a></li>
+<li id="menu-1371" class="menu-path-node-292416"><a href="http://www.codechef.com/educational-initiatives" title="Directi's Educational Initiatives">All Educational Initiatives</a></li>
+</ul>
+</li>
+<li id="menu-147" class="menuparent menu-path-node-3"><a href="http://www.codechef.com/help" title="">HELP</a><ul><li id="menu-643" class="menu-path-www.codechef.com-wiki-faq"><a href="http://www.codechef.com/wiki/faq" title="">Frequently Asked Questions</a></li>
+<li id="menu-710" class="menu-path-www.codechef.com-wiki-faq-problem-setters"><a href="http://www.codechef.com/wiki/faq-problem-setters" title="">FAQ for problem setters</a></li>
+<li id="menu-1389" class="menu-path-node-313543"><a href="http://www.codechef.com/problemsetting" title="Codechef Problem Creation">Problem Setting</a></li>
+<li id="menu-850" class="menu-path-www.codechef.com-wiki-tutorials"><a href="http://www.codechef.com/wiki/tutorials" title="">Tutorials</a></li>
+<li id="menu-2200" class="menu-path-www.codechef.com-long-ranklist-AX"><a href="http://www.codechef.com/long/ranklist/AX" title="Long contest rankings list">Long Contest Ranks</a></li>
+<li id="menu-2199" class="menu-path-www.codechef.com-short-ranklist-AX"><a href="http://www.codechef.com/short/ranklist/AX" title="Short contest rankings list">Short Contest Ranks</a></li>
+<li id="menu-1820" class="menu-path-node-503865"><a href="http://www.codechef.com/event-calendar" title="Event Calendar">Event Calendar</a></li>
+</ul>
+</li>
+<li id="menu-150" class="menuparent menu-path-node-1"><a href="http://www.codechef.com/aboutus" title="">ABOUT</a><ul><li id="menu-151" class="menu-path-node-1"><a href="http://www.codechef.com/aboutus" title="">About CodeChef</a></li>
+<li id="menu-849" class="menu-path-node-178314"><a href="http://www.codechef.com/team" title="Team CodeChef">Team CodeChef</a></li>
+<li id="menu-708" class="menu-path-node-157468"><a href="http://www.codechef.com/press" title="Press Room">Press Room</a></li>
+<li id="menu-1312" class="menu-path-www.codechef.com-financials-"><a href="http://www.codechef.com/financials/" title="">CodeChef Financials</a></li>
+<li id="menu-1313" class="menu-path-www.codechef.com-sponsorships"><a href="http://www.codechef.com/sponsorships" title="">CodeChef Sponsorships</a></li>
+<li id="menu-709" class="menu-path-node-157470"><a href="http://www.codechef.com/ceoscorner" title="CEO's Corner">CEO's Corner</a></li>
+<li id="menu-1858" class="menu-path-node-614485"><a href="http://www.codechef.com/contactus" title="">Contact Us</a></li>
+<li id="menu-152" class="menu-path-www.directi.com-"><a href="http://www.directi.com/" title="">About Directi</a></li>
+</ul>
+</li>
+</ul>
+  </div>
+</div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /HEADER -->
+            <center>
+                <table id="maintable" class="maintable" cellpadding="10" cellspacing="0">
+                    <tbody><tr>
+                        <td class="content" width="99%">
+                            <div class="wrapper" id="content-regions">
+                                <div class="inner-wrapper rounded-cr-body">
+                                    <div class="rounded-cr-header">
+                                        <div class="rounded-cr-footer">
+                                            <div id="breadcrumb"><div class="breadcrumb"><a href="http://www.codechef.com/">Home</a>&nbsp;»&nbsp;<a href="http://www.codechef.com/contests/">Compete</a>&nbsp;»&nbsp;<a href="http://www.codechef.com/TCSP2013/">Techspardha 2013</a>&nbsp;»&nbsp;Is Bigger Smarter</div></div>
+                                            <div id="primary-colum-pad">
+                                                <div id="primary-colum-wrapper">
+                                                    <img class="content-wrapper-header" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/content-wrapper-top-big.gif">
+                                                    <div id="problem-page">
+                                                        <div class="prob">
+                                                            <div class="primary-col-wrapper">
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                <table class="pagetitle-prob" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody><tr>
+                                                                        <td width="55%">
+                                                                            <h1>Is Bigger Smarter</h1>
+                                                                            <p>Problem code: BGSM</p>
+																			                                                                            <fb:like send="true" width="450" show_faces="false" action="recommend" font="verdana"></fb:like>
+                                                                        </td>
+                                                                        <td>
+                                                                            <ul class="button-list">
+                                                                        
+                                                                        
+                <li><a href="http://www.codechef.com/TCSP2013/status/BGSM,adityax10">My Submissions</a></li>                                                                                <li><a href="http://www.codechef.com/TCSP2013/status/BGSM">All Submissions</a></li>
+                                                                            </ul>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody></table>
+                                                                <div class="primary-colum-width-left">
+                                                                    <div id="node-1839758" class="node clear-block">
+        
+    <div class="meta">
+        
+            </div>
+
+    <div class="content">
+<p>Some people think that the bigger an elephant is, the smarter it is. To disprove this,<br>
+you want to analyze a collection of elephants and place as large a subset of elephants<br>
+as possible into a sequence whose weights are increasing but IQ’s are decreasing.</p>
+<h3>Input</h3>
+<p>The input will consist of data for a bunch of elephants, at one elephant per line terminated<br>
+by the end-of-file. The data for each particular elephant will consist of a pair of<br>
+integers: the first representing its size in kilograms and the second representing its IQ<br>
+in hundredths of IQ points. Both integers are between 1 and 10,000. The data contains<br>
+information on at most 1,000 elephants. Two elephants may have the same weight, the<br>
+same IQ, or even the same weight and IQ.</p>
+<h3>Output</h3>
+<p>The only output line should contain an integer n, the length of elephant sequence<br>
+found.. If these sequence<br>
+of n elephants are a[1], a[2],..., a[n] then it must be the case that 
+weight's of 1,2,3...n must be in strictly increasing order and iq's of 
+1,2,3,..n must be in strictly decreasing order.<br>
+In order for the answer to be correct, n must be as large as possible. All inequalities<br>
+are strict: weights must be strictly increasing, and IQs must be strictly decreasing.</p>
+<h3>Example</h3>
+<pre><b>Input:</b>
+6008 1300
+6000 2100
+500 2000
+1000 4000
+1100 3000
+6000 2000
+8000 1400
+6000 1200
+2000 1900
+
+<b>Output:</b>
+4
+</pre>    </div>
+    <hr>
+    <table align="left" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+            <td width="14%">Author:</td>
+            <td><a href="http://www.codechef.com/users/assasin143">assasin143</a></td>
+		</tr>
+						<tr>
+            <td width="14%">Date Added:</td>
+            <td>29-01-2013</td>
+        </tr>
+        <tr>
+            <td width="14%">Time Limit:</td>
+            <td>3 sec</td>
+        </tr>
+        <tr>
+            <td width="14%">Source Limit:</td>
+            <td>50000 Bytes</td>
+        </tr>
+        <tr>
+            <td width="14%">Languages:</td>
+            <td>C, CPP 4.0.0-8, CPP 4.3.2, CS2, JAVA, PERL6, PHP, PIKE, 
+PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT,
+ WSPC</td>
+        </tr>
+    </tbody></table>
+    <p style="clear:left;"><br></p>
+    <ul class="button-list button-list-left">
+        <li style="display:block"><a href="http://www.codechef.com/TCSP2013/submit/BGSM">Submit</a></li>
+    </ul>
+    <hr>
+    <h2 style="text-decoration: none;">Comments</h2>
+</div>
+<div id="comments">
+  <a id="comment-36975"></a>
+<div id="c36975" class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/TCSP2013/problems/BGSM#comment-36975" class="active">@admin :
+do we have to take</a></h3>
+
+  <div class="submitted">
+    <strong><a href="http://www.codechef.com/users/swat_salwan">swat_salwan</a></strong><span style="color:#828282"> @ 2 Feb 2013 11:58 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@admin :
+do we have to take input using files ?
+i.e. file would be there and our program has to read it</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-36978"></a>
+<div id="c36978" class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/TCSP2013/problems/BGSM#comment-36978" class="active">u have to take inputs from</a></h3>
+
+  <div class="submitted">
+    <strong><a href="http://www.codechef.com/users/assasin143">assasin143</a></strong><span style="color:#828282"> @ 2 Feb 2013 12:10 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">u have to take inputs from stdin and output it on stdout</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-36998"></a>
+<div id="c36998" class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/TCSP2013/problems/BGSM#comment-36998" class="active">sorry guys!! input file</a></h3>
+
+  <div class="submitted">
+    <strong><a href="http://www.codechef.com/users/assasin143">assasin143</a></strong><span style="color:#828282"> @ 2 Feb 2013 01:00 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">sorry guys!! input file contains  data for 2500 elephants atmost</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-37002"></a>
+<div id="c37002" class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/TCSP2013/problems/BGSM#comment-37002" class="active">what is this? you are</a></h3>
+
+  <div class="submitted">
+    <strong><a href="http://www.codechef.com/users/aloneman">aloneman</a></strong><span style="color:#828282"> @ 2 Feb 2013 01:07 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">what is this? you are updating the max elephants data in the end and saying sorry guys??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-37006"></a>
+<div id="c37006" class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/TCSP2013/problems/BGSM#comment-37006" class="active">while(scanf("%d%d",&amp;m,&amp;n)!=EO</a></h3>
+
+  <div class="submitted">
+    <strong><a href="http://www.codechef.com/users/cmd13">cmd13</a></strong><span style="color:#828282"> @ 2 Feb 2013 01:12 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">while(scanf("%d%d",&amp;m,&amp;n)!=EOF)
+    {}
+is it working ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-37007"></a>
+<div id="c37007" class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/TCSP2013/problems/BGSM#comment-37007" class="active">@cmd13 yes</a></h3>
+
+  <div class="submitted">
+    <strong><a href="http://www.codechef.com/users/hardcore">hardcore</a></strong><span style="color:#828282"> @ 2 Feb 2013 01:13 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@cmd13 yes</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-37011"></a>
+<div id="c37011" class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/TCSP2013/problems/BGSM#comment-37011" class="active">how will we know the end of</a></h3>
+
+  <div class="submitted">
+    <strong><a href="http://www.codechef.com/users/freakcoder">freakcoder</a></strong><span style="color:#828282"> @ 2 Feb 2013 01:17 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">how will we know the end of inputs. please explain.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-37012"></a>
+<div id="c37012" class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/TCSP2013/problems/BGSM#comment-37012" class="active">prefectly agree with cod2 !!</a></h3>
+
+  <div class="submitted">
+    <strong><a href="http://www.codechef.com/users/cdecoders">cdecoders</a></strong><span style="color:#828282"> @ 2 Feb 2013 01:17 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">prefectly agree with cod2 !! it costs me 5 penalty :(</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="new"></a>
+<a id="comment-37014"></a>
+<div id="c37014" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="http://www.codechef.com/TCSP2013/problems/BGSM#comment-37014" class="active">until scanf returns -1</a></h3>
+
+  <div class="submitted">
+    <strong><a href="http://www.codechef.com/users/assasin143">assasin143</a></strong><span style="color:#828282"> @ 2 Feb 2013 01:22 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">until scanf returns -1</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-37016"></a>
+<div id="c37016" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="http://www.codechef.com/TCSP2013/problems/BGSM#comment-37016" class="active">@admin: how will we know to</a></h3>
+
+  <div class="submitted">
+    <strong><a href="http://www.codechef.com/users/swat_salwan">swat_salwan</a></strong><span style="color:#828282"> @ 2 Feb 2013 01:27 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@admin: how will we know to end the input ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-37017"></a>
+<div id="c37017" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="http://www.codechef.com/TCSP2013/problems/BGSM#comment-37017" class="active">@assasin143 
+Should the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="http://www.codechef.com/users/vanguards">vanguards</a></strong><span style="color:#828282"> @ 2 Feb 2013 01:32 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@assasin143 
+Should the answer be SEQUENCE or SUBSET(seq/unseq)?
+
+Sequence is continuous A[1],A[2],A[3]...A[n]
+Seq Subset is arbitrary numbers(but in order) A[1],A[3],A[5]
+Subset is arbitrary numbers(in no order) A[2],A[5],A[5],A[1]</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-37019"></a>
+<div id="c37019" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="http://www.codechef.com/TCSP2013/problems/BGSM#comment-37019" class="active">why</a></h3>
+
+  <div class="submitted">
+    <strong><a href="http://www.codechef.com/users/mani89">mani89</a></strong><span style="color:#828282"> @ 2 Feb 2013 01:35 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">why while(scanf("%d%d",&amp;m,&amp;n)!=EOF) {} is not working ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-37020"></a>
+<div id="c37020" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="http://www.codechef.com/TCSP2013/problems/BGSM#comment-37020" class="active">it can be arbitrary..u have</a></h3>
+
+  <div class="submitted">
+    <strong><a href="http://www.codechef.com/users/assasin143">assasin143</a></strong><span style="color:#828282"> @ 2 Feb 2013 01:36 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">it can be arbitrary..u have to find the largest subset from the given input set which satisfies the stated conditions</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-37021"></a>
+<div id="c37021" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="http://www.codechef.com/TCSP2013/problems/BGSM#comment-37021" class="active">We submitted correct solution</a></h3>
+
+  <div class="submitted">
+    <strong><a href="http://www.codechef.com/users/cod2">cod2</a></strong><span style="color:#828282"> @ 2 Feb 2013 01:36 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">We submitted correct solution at the first
+ attempt.. but we got 3 penalty due to your fault... Check out our 
+previous 3 submissions to this question and disqualify them so that we 
+can have a better ranking !!!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<div class="box">
+  <h2 class="title"><hr></h2>  <div class="content"><span style="font-weight:bold;color:#777;">Need help? Post a comment. But before that please spare a moment to read the <a href="http://discuss.codechef.com/questions/855/what-kind-of-comment-should-i-post-on-the-problem-page" target="_blank">guidelines</a>.</span><form action="/comment/reply/1839758" accept-charset="UTF-8" method="post" id="comment-form">
+<div><div class="form-item">
+ <label>Your name: </label>
+ adityax10
+</div>
+<div class="form-item" id="edit-comment-wrapper">
+ <label for="edit-comment">Comment: <span class="form-required" title="This field is required.">*</span></label>
+ <div class="resizable-textarea"><span><textarea cols="60" rows="5" name="comment" id="edit-comment" class="form-textarea resizable required textarea-processed"></textarea><div style="margin-right: -2px;" class="grippie"></div></span></div>
+</div>
+<input name="form_build_id" id="form-6442a443405f2e14472bcbf9fb56998c" value="form-6442a443405f2e14472bcbf9fb56998c" type="hidden">
+<input name="form_token" id="edit-form-token" value="467474794b558c87cfc4bf0b6f9d5aa2" type="hidden">
+<input name="form_id" id="edit-comment-form" value="comment_form" type="hidden">
+<input name="op" id="edit-submit" value="Save" class="form-submit" type="submit">
+
+</div></form>
+</div>
+</div>
+</div>
+                                                                </div>
+                                                                <div class="primary-colum-width-right">
+                                                                    <div class="content-spacer-b">
+                                                                        <div id="block-problem_status-0" class="block block-problem_status">
+  <div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>
+  <div class="content">
+        <div class="center topbox-small-1" style="margin-left:0px;"><h3>SUCCESSFUL SUBMISSIONS</h3><h3></h3></div><br>
+		<div id="rankContentDiv" class="table-results maintable"><div class="table-questions" id="rankContentDiv">
+<div class="tablebox-section-small l-float">
+
+    <link href="http://www.codechef.com/sites/all/themes/abessive/submission.css" rel="stylesheet" type="text/css">
+
+    <table style="border:#E0E0E0 solid 1px; " align="left" border="0" cellpadding="0" cellspacing="0" width="333">
+        <tbody>
+        <tr class="headerrow">
+                        <th style="background:#6E9E90; color:#FFF; font-weight:bold; height:20px;">User</th><th style="background:#6E9E90; color:#FFF; font-weight:bold; height:20px;" class="centered" width="25">Time</th><th style="background:#6E9E90; color:#FFF; font-weight:bold; height:20px;" class="centered" width="25">Mem</th><th style="background:#6E9E90; color:#FFF; font-weight:bold; height:20px;" class="centered" width="80">Lang</th><th style="background:#6E9E90; color:#FFF; font-weight:bold; height:20px;" class="centered">Solution</th>        </tr>
+
+        <tr class="kol" style="height:40px;" bgcolor="#E0E0E0"><td style="padding-left:4px;"><a href="http://www.codechef.com/users/hunny_bunny" title="hunny_bunny" target="_blank">hunny_bunny</a></td><td class="centered" width="25">0.27</td><td class="centered" width="25">2.8M</td><td class="centered" width="80">C++ 4.3.2</td><td class="centered" width="60"><ul><li><a class="disabled">View</a></li></ul></td></tr><tr class="kol" style="height:40px;" bgcolor="#ffffff"><td style="padding-left:4px;"><a href="http://www.codechef.com/users/cod2" title="cod2" target="_blank">cod2</a></td><td class="centered" width="25">0.27</td><td class="centered" width="25">4.5M</td><td class="centered" width="80">C++ 4.3.2</td><td class="centered" width="60"><ul><li><a class="disabled">View</a></li></ul></td></tr><tr class="kol" style="height:40px;" bgcolor="#E0E0E0"><td style="padding-left:4px;"><a href="http://www.codechef.com/users/bashrc" title="bashrc" target="_blank">bashrc</a></td><td class="centered" width="25">0.29</td><td class="centered" width="25">2.8M</td><td class="centered" width="80">C++ 4.3.2</td><td class="centered" width="60"><ul><li><a class="disabled">View</a></li></ul></td></tr><tr class="kol" style="height:40px;" bgcolor="#ffffff"><td style="padding-left:4px;"><a href="http://www.codechef.com/users/squared" title="squared" target="_blank">squared</a></td><td class="centered" width="25">0.30</td><td class="centered" width="25">2.8M</td><td class="centered" width="80">C++ 4.3.2</td><td class="centered" width="60"><ul><li><a class="disabled">View</a></li></ul></td></tr><tr class="kol" style="height:40px;" bgcolor="#E0E0E0"><td style="padding-left:4px;"><a href="http://www.codechef.com/users/ray005" title="ray005" target="_blank">ray005</a></td><td class="centered" width="25">0.30</td><td class="centered" width="25">2.8M</td><td class="centered" width="80">C++ 4.3.2</td><td class="centered" width="60"><ul><li><a class="disabled">View</a></li></ul></td></tr><tr class="kol" style="height:40px;" bgcolor="#ffffff"><td style="padding-left:4px;"><a href="http://www.codechef.com/users/codedreamers" title="codedreamers" target="_blank">codedreamers</a></td><td class="centered" width="25">0.31</td><td class="centered" width="25">2.8M</td><td class="centered" width="80">C++ 4.3.2</td><td class="centered" width="60"><ul><li><a class="disabled">View</a></li></ul></td></tr><tr class="kol" style="height:40px;" bgcolor="#E0E0E0"><td style="padding-left:4px;"><a href="http://www.codechef.com/users/rgb2108rgb" title="rgb2108rgb" target="_blank">rgb2108rgb</a></td><td class="centered" width="25">0.32</td><td class="centered" width="25">2.8M</td><td class="centered" width="80">C++ 4.3.2</td><td class="centered" width="60"><ul><li><a class="disabled">View</a></li></ul></td></tr><tr class="kol" style="height:40px;" bgcolor="#ffffff"><td style="padding-left:4px;"><a href="http://www.codechef.com/users/l0gic_monks" title="l0gic_monks" target="_blank">l0gic_monks</a></td><td class="centered" width="25">0.33</td><td class="centered" width="25">2.7M</td><td class="centered" width="80">C++ 4.3.2</td><td class="centered" width="60"><ul><li><a class="disabled">View</a></li></ul></td></tr><tr class="kol" style="height:40px;" bgcolor="#E0E0E0"><td style="padding-left:4px;"><a href="http://www.codechef.com/users/azaz569" title="azaz569" target="_blank">azaz569</a></td><td class="centered" width="25">0.33</td><td class="centered" width="25">15.2M</td><td class="centered" width="80">C++ 4.3.2</td><td class="centered" width="60"><ul><li><a class="disabled">View</a></li></ul></td></tr><tr class="kol" style="height:40px;" bgcolor="#ffffff"><td style="padding-left:4px;"><a href="http://www.codechef.com/users/ymbella" title="ymbella" target="_blank">ymbella</a></td><td class="centered" width="25">0.34</td><td class="centered" width="25">6.6M</td><td class="centered" width="80">C++ 4.0.0-8</td><td class="centered" width="60"><ul><li><a class="disabled">View</a></li></ul></td></tr><tr class="kol" style="height:40px;" bgcolor="#E0E0E0"><td style="padding-left:4px;"><a href="http://www.codechef.com/users/thebeginner" title="thebeginner" target="_blank">thebeginner</a></td><td class="centered" width="25">0.35</td><td class="centered" width="25">2.8M</td><td class="centered" width="80">C++ 4.3.2</td><td class="centered" width="60"><ul><li><a class="disabled">View</a></li></ul></td></tr><tr class="kol" style="height:40px;" bgcolor="#ffffff"><td style="padding-left:4px;"><a href="http://www.codechef.com/users/hardcore" title="hardcore" target="_blank">hardcore</a></td><td class="centered" width="25">0.35</td><td class="centered" width="25">2.8M</td><td class="centered" width="80">C++ 4.3.2</td><td class="centered" width="60"><ul><li><a class="disabled">View</a></li></ul></td></tr>        </tbody>
+    </table>
+    </div>
+
+<div id="hidden">
+                <input id="pcode" value="BGSM" name="pcode" type="hidden"><input id="ccode" value="TCSP2013" name="ccode" type="hidden">
+				<input id="next_p" value="1" name="n" type="hidden">
+				<input id="prev_p" value="-1" name="p" type="hidden">
+            </div>
+            <table class="problems" style="padding:0px; border-color:white; clear: both;" border="0" width="333">
+            <tbody>
+                <tr>
+                    <td style="border-bottom:0;" width="68">
+                      
+                    </td>
+                    <td style="border-bottom:0;" width="204">
+                    <div id="loader" style="height:20px;" align="center"><div class="pageinfo" align="center"><center>1 of 3</center></div></div>
+                    </td>
+                    <td style="border-bottom:0;" align="right" width="68">
+                      <a onclick="onload_getpage_ssubmissions('next');"><img src="/sites/all/themes/abessive/images/page-next-active.gif"></a>
+                    </td>
+                </tr>
+              </tbody>
+             </table>
+           </div></div>  </div>
+  <div class="r5"></div><div class="r4"></div><div class="r3"></div><div class="r2"></div><div class="r1 b"></div>
+</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <img class="content-wrapper-header" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/content-wrapper-bootm-big.gif">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody></table>
+
+                                    <div id="footer" class="wrapper">
+                        <!--<div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>-->
+                        <div class="content clear-block">
+                            <!-- Footer Contents -->
+                            <div id="block-block-13" class="block block-block block-header">
+  <div class="content">
+        <script language="javascript" type="text/javascript">
+function formatTime(ts) {
+  now = new Date(ts);
+ 
+  localtime = new Date();
+  hour = now.getHours();
+  min = now.getMinutes();
+  sec = now.getSeconds();
+  
+  if (min <= 9) {
+	 min = "0" + min;
+  }
+  if (sec <= 9) {
+	 sec = "0" + sec;
+  }
+  if (hour > 12) {
+	 hour = hour - 12;
+	 add = " PM";
+  } else {
+	 hour = hour;
+	 add = " AM";
+  }
+  if (hour == 12) {
+	 add = " PM";
+  }
+  if (hour == 00) {
+	 hour = "12";
+  }
+	
+  $('#server-time').html(((hour<=9) ? "0" + hour : hour) + ":" + min + ":" + sec + add);
+  
+  nextSec = (now.getTime() + 1000);
+  
+  setTimeout("formatTime("+nextSec+")", 1000);
+}
+function getDtTimeZone() 
+{
+var rightNow = new Date();
+var toDay = new Date(rightNow.getFullYear(), 0, 1, 0, 0, 0, 0);
+var temp = toDay.toGMTString();
+var date2 = new Date(temp.substring(0, temp.lastIndexOf(" ") -1));
+var stdTime = (toDay - date2) / (1000 * 60 * 60);
+return stdTime;
+}
+/*var d=new Date();
+$.ajax({
+url: '/umtza',
+type:'POST',
+data: 'umtza='+d.toString(),
+});
+*/
+</script>
+<div id="disclaimer">CodeChef is a non-commercial competitive programming community</div>
+<div class="inner-wrapper">
+<div class="cols-2">
+<div id="secondary-nav">
+<ul>
+    <li><a href="http://www.codechef.com/aboutus/">About CodeChef</a></li>
+    <li><a target="_blank" href="http://www.directi.com/">About Directi</a></li>
+    <li><a href="http://www.codechef.com/ceoscorner/">CEO's Corner</a></li>
+    <li><a href="http://www.codechef.com/c-programming">C-Programming</a></li>
+    <li><a href="http://www.codechef.com/Programming-Languages">Programming Languages</a></li>
+    <li><a href="http://www.codechef.com/contactus">Contact Us</a></li>
+</ul>
+</div>
+<div id="copyright" class="cols-2">© 2009 <a style="color: rgb(0, 0, 0);" href="http://www.directi.com/">Directi Group</a>.  All Rights Reserved.  CodeChef uses SPOJ © by <a style="color: rgb(0, 0, 0);" href="http://www.sphere-research.com/">Sphere Research Labs</a></div>
+<div id="copyright-msg">In order to report copyright violations of any kind, send in an email to <a href="mailto:copyright@codechef.com">copyright@codechef.com</a></div>
+</div>
+<div class="cols-2-right" style="float:right;" align="right">
+<div id="sponsor-strip"><a target="_blank" href="http://www.directi.com/"><img alt="CodeChef a product of Directi" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/footer-sponsor-strip.gif"></a><br>
+<span>The time now is: <span id="server-time">01:37:51 PM</span></span>
+				<script language="javascript">
+						formatTime('February 02, 2013 13:37:49');
+					</script></div>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="Is%20Bigger%20Smarter%20_%20CodeChef_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-53602-42");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+
+<!-- Google Code for Visitors that do not sign-up Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1066618556;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "666666";
+var google_conversion_label = "gbUUCPTlhAIQvJ3N_AM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1066618556/?label=gbUUCPTlhAIQvJ3N_AM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!-- Google Code for RM codechef Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 968176136;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "iDk7CPDZ7wMQiOTUzQM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/968176136/?label=iDk7CPDZ7wMQiOTUzQM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<div class="cc-footer-seo">
+<span><a href="http://www.codechef.com/">CodeChef</a> - A Platform for Aspiring Programmers</span>
+<p>CodeChef was created as a platform to help programmers make it big in the world of algorithms, <strong>computer programming</strong> and <strong>programming contests</strong>. At CodeChef we work hard to revive the geek in you by hosting a <strong>programming contest</strong>
+ at the start of the month and another smaller programming challenge in 
+the middle of the month. We also aim to have training sessions and 
+discussions related to <strong>algorithms, binary search</strong>, technicalities like <strong>array size</strong> and the likes. Apart from providing a platform for <strong>programming competitions</strong>, CodeChef also has various algorithm tutorials and forum discussions to help those who are new to the world of <strong>computer programming</strong>.</p>
+<p></p>
+<span><a href="http://www.codechef.com/problems/easy">Practice Section</a> - A Place to hone your 'Computer Programming Skills'</span>
+<p>Try your hand at one of our many practice problems and submit your solution in a language of your choice. Our <strong>programming contest</strong>
+ judge accepts solutions in over 35+ programming languages. Preparing 
+for coding contests were never this much fun! Receive points, and move 
+up through the CodeChef ranks. Use our practice section to better 
+prepare yourself for the multiple <strong>programming challenges</strong> that take place through-out the month on CodeChef. </p>
+<p></p>
+<span><a href="http://www.codechef.com/contests/">Compete</a> - Monthly Programming Contests and Cook-offs</span>
+<p>Here is where you can show off your <strong>computer programming</strong> skills. Take part in our 10 day long monthly <strong>coding contest</strong> and the shorter format Cook-off <strong>coding contest</strong>. Put yourself up for recognition and win great prizes. Our <strong>programming contests</strong> have prizes worth up to Rs.20,000 and $700lots more CodeChef goodies up for grabs. </p>
+<p></p>
+<span><a href="http://discuss.codechef.com/">Discuss</a></span>
+<p>Are you new to <strong>computer programming</strong>? Do you need 
+help with algorithms? Then be a part of CodeChef's Forums and interact 
+with all our programmers - they love helping out other programmers and 
+sharing their ideas. Have discussions around <strong>binary search, array size, branch-and-bound, Dijkstra's algorithm, Encryption algorithm</strong> and more by visiting the CodeChef Forums and Wiki section.</p>
+<p></p>
+<span><a href="http://www.codechef.com/community">CodeChef Community</a></span>
+<p>As part of our Educational initiative, we give institutes the 
+opportunity to associate with CodeChef in the form of Campus Chapters. 
+Hosting <strong>online programming competitions</strong> is not the only feature on CodeChef. You can also host a <strong>coding contest</strong> for your institute on CodeChef, organize an <strong>algorithm</strong> event and be a guest author on our blog. </p>
+<p></p>
+<span><a href="http://www.codechef.com/goforgold">Go For Gold</a></span>
+<p>The Go for Gold Initiative was launched about a year after CodeChef was incepted, to help prepare Indian students for the <strong>ACM ICPC</strong> World Finals competition. In the run up to the <strong>ACM ICPC</strong> competition, the Go for Gold initiative uses CodeChef as a platform to train students for the <strong>ACM ICPC</strong>
+ competition via multiple warm up contests. As an added incentive the Go
+ for Gold initiative is also offering over Rs.8 lacs to the Indian team 
+that beats the 29th position at the <strong>ACM ICPC</strong> world finals. Find out more about the Go for Gold and the <strong>ACM ICPC</strong> competition <a href="http://www.codechef.com/goforgold">here</a>.</p>
+</div>  </div>
+</div>
+<div id="block-block-48" class="block block-block block-header">
+  <div class="content">
+        <script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/jquery_003.js">  </script><script type="text/javascript" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/notification.js">  </script>  </div>
+</div>
+                        </div>
+                    </div>
+                                      <div id="fb-root"><script async="" src="Is%20Bigger%20Smarter%20_%20CodeChef_files/all.js"></script></div>
+      <script type="text/javascript">
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId  : '191217060453',
+            status : true, // check login status
+            cookie : true, // enable cookies to allow the server to access the session
+            xfbml  : true,
+            logging: '0',
+            channelURL: 'http://www.codechef.com/sites/all/modules/fbconnect/channel.html',
+            oauth : true
+          });
+
+          jQuery(document).trigger('fb:init');
+        };
+
+        (function() {
+          var e = document.createElement('script');
+          e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+          e.async = true;
+          document.getElementById('fb-root').appendChild(e);
+        }());
+      </script>
+<div style="display: none"><form action="/TCSP2013/problems/BGSM?destination=node%2F1839758" accept-charset="UTF-8" method="post" id="fbconnect-autoconnect-form">
+<div><input name="op" id="edit-connect" value="Connect" class="form-submit" type="submit">
+<input name="form_build_id" id="form-0cf73016301b6825ec500081719a6a45" value="form-0cf73016301b6825ec500081719a6a45" type="hidden">
+<input name="form_token" id="edit-fbconnect-autoconnect-form-form-token" value="ef7394c5d246c5c7b8812eeb13564046" type="hidden">
+<input name="form_id" id="edit-fbconnect-autoconnect-form" value="fbconnect_autoconnect_form" type="hidden">
+
+</div></form>
+</div>            </center>
+    
+
+</center><div id="lightbox2-overlay" style="display: none;"></div>      <div id="lightbox" style="display: none;" class="lightbox2-orig-layout">        <div style="background-color: rgb(238, 237, 236); color: rgb(0, 0, 0);" id="outerImageContainer"><div id="modalContainer" style="display: none; padding: 10px;"></div><div id="frameContainer" style="display: none; padding: 10px;"></div><div id="imageContainer" style="display: none; padding: 10px;"><img id="lightboxImage" alt=""><div id="hoverNav"><a style="padding-top: 10px;" id="prevLink" title="Previous" href="#"></a><a style="padding-top: 10px;" id="nextLink" title="Next" href="#"></a></div></div><div id="loading"><a href="#" id="loadingLink"></a></div></div>        <div style="background-color: rgb(238, 237, 236); color: rgb(0, 0, 0);" id="imageDataContainer" class="clearfix">          <div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><div id="frameHoverNav"><a style="padding-top: 10px;" id="framePrevLink" title="Previous" href="#"></a><a style="padding-top: 10px;" id="frameNextLink" title="Next" href="#"></a></div><a style="background-color: rgb(238, 237, 236); color: rgb(0, 0, 0);" id="bottomNavClose" title="Close" href="#"></a><a id="bottomNavZoom" href="#"></a><a id="bottomNavZoomOut" href="#"></a><a id="lightshowPause" title="Pause Slideshow" href="#" style="display: none;"></a><a id="lightshowPlay" title="Play Slideshow" href="#" style="display: none;"></a></div></div>        </div>      </div></body></html>

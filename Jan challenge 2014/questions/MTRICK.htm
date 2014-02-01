@@ -1,0 +1,1287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en" dir="ltr">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script>
+            (function(_,e,rr,s){_errs=[s];var c=_.onerror;_.onerror=function(){var a=arguments;_errs.push(a);
+            c&&c.apply(this,a)};var b=function(){var c=e.createElement(rr),b=e.getElementsByTagName(rr)[0];
+            c.src="//beacon.errorception.com/"+s+".js";c.async=!0;b.parentNode.insertBefore(c,b)};
+            _.addEventListener?_.addEventListener("load",b,!1):_.attachEvent("onload",b)})
+            (window,document,"script","4e7c8fce06a9ab05530008e5");
+        </script>
+
+		<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+        <title>Magic Trick | CodeChef</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="programming, language, algorithm, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM" />
+<link rel="shortcut icon" href="/misc/favicon.ico" type="image/x-icon" />
+        <link type="text/css" rel="stylesheet" media="all" href="http://www.codechef.com/sites/default/files/css/css_a46986be24577e3f62b453db092a0b61.css" />
+        <link rel="stylesheet" type="text/css" href="/sites/all/themes/abessive/acmkanpurproblem.css" />
+        <script type="text/javascript" src="/sites/all/modules/jquery_update/replace/jquery.min.js?R"></script>
+<script type="text/javascript" src="/misc/drupal.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/fbconnect/fbconnect.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/fivestar/js/fivestar.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/lightbox2/js/lightbox.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
+<script type="text/javascript" src="/misc/common.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/tableofcontents/jquery.scrollTo-min.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/tableofcontents/jquery.localscroll-min.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/tableofcontents/tableofcontents.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/codechef_recent_comments/codechef_recent_comments.js?R"></script>
+<script type="text/javascript" src="/misc/textarea.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","fbconnect":{"user_pictures":"allow","language_code":"en_US","app_id":"191217060453","debug":0,"connect_js":"document.location.protocol + '\/\/connect.facebook.net\/en_US\/all.js'","loginout_mode":"manual","invite_name":"CodeChef","fast_reg_mode":0,"fast_reg_autoname":0,"fbuid":null,"user":{"uid":"102389","fbuid":null}},"fivestar":{"titleUser":"Your rating: ","titleAverage":"Average: ","feedbackSavingVote":"Saving your vote...","feedbackVoteSaved":"Your vote has been saved.","feedbackDeletingVote":"Deleting your vote...","feedbackVoteDeleted":"Your vote has been deleted."},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)sites\/default\/files","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"eeedec","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":1,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":0,"disable_resize":0,"disable_zoom":0,"force_show_nav":0,"show_caption":true,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\u003e\u003ckbd\u003ex\u003c\/kbd\u003e\u003c\/a\u003e to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":500,"iframe_height":70,"iframe_border":1,"enable_video":0}});
+//--><!]]>
+</script>
+        <meta property="og:title" content="Magic Trick" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://www.codechef.com/JAN14/problems/MTRICK" />
+        <meta property="og:image" content="http://www.codechef.com/misc/fb-chef.gif" />
+        <meta property="og:site_name" content="CodeChef" />
+        <meta property="fb:app_id" content="155442717838457" />
+
+		<script type="text/javascript">
+				</script>
+
+    </head>
+    <body  class="sidebar-right"><center>
+
+            <div id="header" class="wrapper">
+                <div class="inner-wrapper">
+                    <!-- Header -->
+                    <div id="logo-floater" class="cols-2">
+                        <a href="/" title=""><img src="/sites/all/themes/abessive/logo.png" alt="CodeChef is a non-commercial competitive programming community" id="logo" /><span></span></a>                    </div>
+                    <div class="cols-2">
+                        <div id="custom-login">
+                                <!--Hello <strong>Admin</strong>, Check your <strong><a href="">Account</a></strong> or <a href="/logout">Log Out</a>-->
+                            <div id="user-bar">
+                <div class="login-user"> 
+                    <table cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+        <span>
+            Hello adityax10! <br />
+            <a href="/users/adityax10" title="Edit Your Account">Account</a>
+            or <a href="/logout">Log Out</a>
+        </span></td>
+                        </tr>
+                    </table>
+                </div></div>
+        <div id="facebook-login">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>Login or<br>Signup with</td>
+                    <td><span class="facebook-button"><div class="fb-login-button"  size="medium" onlogin="facebook_onlogin_ready();" background="dark" v="2" scope="publish_stream, offline_access">Connect</div></span></td>
+                </tr>
+            </table>
+        </div>    
+        <div class="question-note">
+            <a href="#">
+                <span class="icon-question">Note</span>
+                <div class="tooltip">
+                    <ul>
+                        <li>Publicize your achievements on your Facebook Wall.</li>
+                        <li>Challenge your friends or ask them for help.</li>
+                    </ul>
+                </div>
+            </a>
+        </div>                        </div>
+
+                        <div id="block-nice_menus-1" class="block block-nice_menus block-header">
+  <div class="content">
+    <h2><span class="nice-menu-hide-title">Site Navigation</span></h2>    <ul class="nice-menu nice-menu-down" id="nice-menu-1"><li id="menu-302" class="menuparent menu-path-problems-easy"><a href="/problems/easy" title="">PRACTICE</a><ul><li id="menu-303" class="menu-path-problems-easy"><a href="/problems/easy" title="">Easy</a></li>
+<li id="menu-304" class="menu-path-problems-medium"><a href="/problems/medium" title="">Medium</a></li>
+<li id="menu-305" class="menu-path-problems-hard"><a href="/problems/hard" title="">Hard</a></li>
+<li id="menu-1819" class="menu-path-problems-challenge"><a href="/problems/challenge" title="">Challenge</a></li>
+<li id="menu-1376" class="menu-path-problems-extcontest"><a href="/problems/extcontest" title="">Peer</a></li>
+<li id="menu-2602" class="menu-path-problems-school"><a href="/problems/school" title="">School</a></li>
+</ul>
+</li>
+<li id="menu-309" class="menuparent menu-path-contests"><a href="/contests" title="">COMPETE</a><ul><li id="menu-2203" class="menu-path-www.codechef.com-contests"><a href="http://www.codechef.com/contests" title="">All Contests</a></li>
+<li id="menu-4726" class="menu-path-www.codechef.com-JAN14"><a href="http://www.codechef.com/JAN14" title="">January Challenge 2014</a></li>
+<li id="menu-4724" class="menu-path-www.codechef.com-KGP13ACM"><a href="http://www.codechef.com/KGP13ACM" title="">ACM-ICPC Kharagpur onsite regionals 2013 : Replay</a></li>
+<li id="menu-4721" class="menu-path-www.codechef.com-LTIME07"><a href="http://www.codechef.com/LTIME07" title="">December Lunchtime 2013</a></li>
+</ul>
+</li>
+<li id="menu-138" class="menuparent menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">DISCUSS</a><ul><li id="menu-139" class="menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">Forums</a></li>
+<li id="menu-140" class="menu-path-blog.codechef.com-"><a href="http://blog.codechef.com/" title="">Blog</a></li>
+<li id="menu-920" class="menu-path-wiki-"><a href="/wiki/" title="">Wiki</a></li>
+<li id="menu-2202" class="menu-path-https--www.facebook.com-CodeChef"><a href="https://www.facebook.com/CodeChef" title="">Facebook</a></li>
+<li id="menu-141" class="menu-path-www.twitter.com-codechef"><a href="http://www.twitter.com/codechef" title="">Twitter</a></li>
+</ul>
+</li>
+<li id="menu-143" class="menuparent menu-path-node-124098"><a href="/community" title="">COMMUNITY</a><ul><li id="menu-733" class="menu-path-node-157517"><a href="/hostyourcontest" title="Hosting Contest on CodeChef">Host your Contest</a></li>
+<li id="menu-2310" class="menu-path-www.codechef.com-goforgold"><a href="http://www.codechef.com/goforgold" title="">Go for Gold</a></li>
+<li id="menu-3830" class="menu-path-www.codechef.com-campus_chapter-about"><a href="http://www.codechef.com/campus_chapter/about" title="">Campus Chapter</a></li>
+</ul>
+</li>
+<li id="menu-147" class="menuparent menu-path-node-3"><a href="/help" title="">HELP</a><ul><li id="menu-643" class="menu-path-www.codechef.com-wiki-faq"><a href="http://www.codechef.com/wiki/faq" title="">Frequently Asked Questions</a></li>
+<li id="menu-710" class="menu-path-www.codechef.com-wiki-faq-problem-setters"><a href="http://www.codechef.com/wiki/faq-problem-setters" title="">FAQ for problem setters</a></li>
+<li id="menu-1389" class="menu-path-node-313543"><a href="/problemsetting" title="Codechef Problem Creation">Problem Setting</a></li>
+<li id="menu-850" class="menu-path-www.codechef.com-wiki-tutorials"><a href="http://www.codechef.com/wiki/tutorials" title="">Tutorials</a></li>
+<li id="menu-2200" class="menu-path-www.codechef.com-long-ranklist-AX"><a href="http://www.codechef.com/long/ranklist/AX" title="Long contest rankings list">Long Contest Ranks</a></li>
+<li id="menu-2199" class="menu-path-www.codechef.com-short-ranklist-AX"><a href="http://www.codechef.com/short/ranklist/AX" title="Short contest rankings list">Short Contest Ranks</a></li>
+<li id="menu-1820" class="menu-path-node-503865"><a href="/event-calendar" title="Event Calendar">Event Calendar</a></li>
+<li id="menu-2372" class="menu-path-discuss.ww2.codechef.com-top-users-"><a href="http://discuss.ww2.codechef.com/top/users/" title="">Top Contributors on Discuss</a></li>
+</ul>
+</li>
+<li id="menu-150" class="menuparent menu-path-node-1"><a href="/aboutus" title="">ABOUT</a><ul><li id="menu-151" class="menu-path-node-1"><a href="/aboutus" title="">About CodeChef</a></li>
+<li id="menu-849" class="menu-path-node-178314"><a href="/team" title="Team CodeChef">Team CodeChef</a></li>
+<li id="menu-708" class="menu-path-node-157468"><a href="/press" title="Press Room">Press Room</a></li>
+<li id="menu-1312" class="menu-path-www.codechef.com-financials-"><a href="http://www.codechef.com/financials/" title="">CodeChef Financials</a></li>
+<li id="menu-1313" class="menu-path-www.codechef.com-sponsorships"><a href="http://www.codechef.com/sponsorships" title="">CodeChef Sponsorships</a></li>
+<li id="menu-709" class="menu-path-node-157470"><a href="/ceoscorner" title="CEO&#039;s Corner">CEO&#039;s Corner</a></li>
+<li id="menu-1858" class="menu-path-node-614485"><a href="/contactus" title="">Contact Us</a></li>
+<li id="menu-152" class="menu-path-www.directi.com-"><a href="http://www.directi.com/" title="">About Directi</a></li>
+</ul>
+</li>
+</ul>
+  </div>
+</div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /HEADER -->
+            <center>
+                <table cellspacing="0" cellpadding="10" id="maintable" class="maintable">
+                    <tr>
+                        <td class="content" width="99%">
+                            <div class="wrapper" id="content-regions">
+                                <div class="inner-wrapper rounded-cr-body">
+                                    <div class="rounded-cr-header">
+                                        <div class="rounded-cr-footer">
+                                            <div id="breadcrumb"><div class="breadcrumb"><a href="/">Home</a>&nbsp;&raquo;&nbsp;<a href="/contests/">Compete</a>&nbsp;&raquo;&nbsp;<a href="/JAN14/">January Challenge 2014</a>&nbsp;&raquo;&nbsp;Magic Trick</div></div>
+                                            <div id="primary-colum-pad">
+                                                <div id="primary-colum-wrapper">
+                                                    <img class="content-wrapper-header" src="/sites/all/themes/abessive/images/content-wrapper-top-big.gif"/>
+                                                    <div id="problem-page">
+                                                        <div class="prob">
+                                                            <div class="primary-col-wrapper">
+                                                                                                                                                                                                                                                                                                                                <table class="pagetitle-prob" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                                    <tr>
+                                                                        <td width="55%">
+                                                                            <h1>Magic Trick</h1>
+                                                                            <p>Problem code: MTRICK</p>
+																			                                                                            <fb:like send="true" width="450" show_faces="false" action="recommend" font="verdana"></fb:like>
+                                                                        </td>
+                                                                        <td>
+                                                                            <ul class="button-list">
+                                                                                <li style="display:<?php print $node->answerDisplay; ?>"><a href ="/JAN14/submit/MTRICK">Submit</a></li>                                                                                <li><a href="/JAN14/status/MTRICK,adityax10">My Submissions</a></li>                                                                                <li><a href="/JAN14/status/MTRICK">All Submissions</a></li>
+                                                                            </ul>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <div class="primary-colum-width-left">
+                                                                    <div id="node-4302274" class="node clear-block">
+        
+    <div class="meta">
+        
+            </div>
+
+    <div class="content">
+<h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/JAN14/mandarin/MTRICK.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/JAN14/russian/MTRICK.pdf">Russian</a>.</h3>
+<p>Vidhi went to a magic show last week where she was astounded by a magic trick performed by the great Mandwarf, the brown. His trick was as follows :
+
+<ul>
+    <li>
+    Ask a volunteer from the audience to write down a list <b>L</b> of <b>N</b> integers. 
+    </li>
+
+    <li>
+    Ask another volunteer from the audience to provide three integers <b>A</b>, <b>B</b>, <b>C</b>
+    </li>
+
+    <li>
+    Ask another volunteer from the audience to provide <b>N</b> length string called <b>S</b> where each letter is either 'R', 'A' or 'M'
+    </li>
+
+    <li>
+    Close his eyes for a split second and give the output of The Ancient Algorithm on this input. 
+    </li>
+</ul></p>
+
+We all know that The Ancient Algorithm is as follows :
+<pre>
+
+for i from 1 to <b>N</b> do 
+
+    if i<sup>th</sup> letter of <b>S</b> is 'R'
+        reverse <b>L</b>[i...<b>N</b>]
+
+    else if i<sup>th</sup> letter of <b>S</b> is 'A'
+        add <b>A</b> to all numbers of <b>L</b>[i..<b>N</b>], all calculations done modulo <b>C</b>
+
+    else if i<sup>th</sup> letter of <b>S</b> is 'M'
+        multiply <b>B</b> to all numbers of <b>L</b>[i..<b>N</b>], all calculations done modulo <b>C</b>
+
+    announce <b>L</b>[i] out loud
+
+end
+
+</pre>    
+
+
+<p>Vidhi's boyfriend got jealous when he saw her getting impressed by Mandwarf, the brown's wisdom. He wants to learn the trick to gain her undivided admiration. How about you help him?
+
+<h3>Constraints:</h3>
+</p><p>1 ≤ <b>T</b> ≤ 100 <br />
+1 ≤ <b>N</b> ≤ 1000<br />
+0 ≤ <b>L</b>[i] ≤ 10<sup>18</sup><br />
+0 ≤ <b>A</b>,<b>B</b> ≤ 10<sup>18</sup><br />
+2 ≤ <b>C</b> ≤ 10<sup>18</sup><br />
+
+<h3>Input</h3>
+</p><p>First line contains a single integer <b>T</b>, denoting the number of test cases. Then follow <b>T</b> test case scenarios. Each test case begins with an integer <b>N</b>, the size of the list <b>L</b>. Then in next line, you'd find <b>N</b> space separated integers - the list <b>L</b> itself. In next line, there'd be three space separated integers <b>A</b>, <b>B</b>, <b>C</b> followed by string <b>S</b> in the next line. 
+
+<h3>Output</h3>
+</p><p>For each test case you've to output <b>N</b> space separated integers - the numbers announced by Mandwarf, the brown. 
+
+<h3>Example</h3>
+
+<pre>
+<b>Input:</b>
+2
+3
+1 1 1
+2 3 1000
+ARM
+4
+1 2 3 4
+0 1 1000
+AMAM
+
+<b>Output:</b>
+3 3 9
+1 2 3 4
+</pre></p>    </div>
+    <hr />
+    <table cellspacing="0" cellpadding="0" align="left">
+        <tr>
+            <td width="14%">Author:</td>
+            <td><a href="/users/yellow_agony">yellow_agony</a></td>
+		</tr>
+				                <tr>
+            <td width="14%">Tags</td>
+            <td><a class='problem-tag-small ' href='/tags/problems/yellow_agony'>
+                    yellow_agony
+                </a></td>
+        </tr>
+        		<tr>
+            <td width="14%">Date Added:</td>
+            <td>18-02-2012</td>
+        </tr>
+        <tr>
+            <td width="14%">Time Limit:</td>
+            <td>2 sec</td>
+        </tr>
+        <tr>
+            <td width="14%">Source Limit:</td>
+            <td>50000 Bytes</td>
+        </tr>
+        <tr>
+            <td width="14%">Languages:</td>
+            <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.8.1, CPP11, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAR, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td>
+        </tr>
+    </table>
+    <p style="clear:left;"><br /></p>
+    <ul class="button-list button-list-left">
+        <li style="display:block"><a href ="/JAN14/submit/MTRICK">Submit</a></li>
+    </ul>
+    <hr />
+    <h2 style="text-decoration: none;">Comments</h2>
+</div>
+<div id="comments">
+  <a id="new"></a>
+<a id="comment-69191"></a>
+<div id="c69191" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69191" class="active">should the number be anounced</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/ali_bibak">ali_bibak</a></strong><span style="color:#828282"> @ 3 Jan 2014 07:34 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">should the number be anounced modulo C even if it is never added or multiplied by?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69322"></a>
+<div id="c69322" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69322" class="active">all numbers should module C</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/wudired">wudired</a></strong><span style="color:#828282"> @ 3 Jan 2014 11:58 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">all numbers should module C between anounced, which puzzle me.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69327"></a>
+<div id="c69327" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69327" class="active">Is the first test case output</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/firebeard">firebeard</a></strong><span style="color:#828282"> @ 4 Jan 2014 12:06 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Is the first test case output right ? :|</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69363"></a>
+<div id="c69363" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69363" class="active">@firebeard In fst test case1</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/deepsaggas">deepsaggas</a></strong><span style="color:#828282"> @ 4 Jan 2014 01:17 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@firebeard In fst test case1 1 1 -&gt; 3 3 3 -&gt; 3 3 3 -&gt; 3 3 9</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69373"></a>
+<div id="c69373" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69373" class="active">Please Clarify, if 3rd</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/deepsaggas">deepsaggas</a></strong><span style="color:#828282"> @ 4 Jan 2014 02:03 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Please Clarify, if 3rd Volunteer makes a string of only 'R' and no A or M will then values be printed modulo C or not.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69376"></a>
+<div id="c69376" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69376" class="active">finally!</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/dracowane">dracowane</a></strong><span style="color:#828282"> @ 4 Jan 2014 02:13 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">finally!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69378"></a>
+<div id="c69378" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69378" class="active">@admin Same ques as</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/ashish1610">ashish1610</a></strong><span style="color:#828282"> @ 4 Jan 2014 02:14 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@admin Same ques as deepsaggas. Please clarify asap.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69432"></a>
+<div id="c69432" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69432" class="active">what is meant by all</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/v4_adi">v4_adi</a></strong><span style="color:#828282"> @ 4 Jan 2014 09:57 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">what is meant by all calculations done modulo c..we have to modulo only list or A and B too,and whole list?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69436"></a>
+<div id="c69436" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69436" class="active">@deepsaggas : Doesn&#039;t it say</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/firebeard">firebeard</a></strong><span style="color:#828282"> @ 4 Jan 2014 10:17 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@deepsaggas : Doesn't it say multiply all the numbers in the list with B and later modulo C, as in the first case 1 1 1 -&gt; 3 3 3 -&gt; 3 3 3 -&gt; 3 3 9, shouldn't the final answer be 9 9 9 ? correct me if i am wrong.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69454"></a>
+<div id="c69454" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69454" class="active">@firebeard : in the problem</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/hatim009">hatim009</a></strong><span style="color:#828282"> @ 4 Jan 2014 11:41 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@firebeard : in the problem Mandwarf annouce L[i] immediately after performing the operation S[i] and not all L[i] after performing all the operations.that's why ans is 3 3 9.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69469"></a>
+<div id="c69469" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69469" class="active">finally got the magic</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/princerk">princerk</a></strong><span style="color:#828282"> @ 4 Jan 2014 12:43 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">finally got the magic trick..:D</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69480"></a>
+<div id="c69480" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69480" class="active">can someone who got accepted</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/prasu_newbie">prasu_newbie</a></strong><span style="color:#828282"> @ 4 Jan 2014 01:03 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">can someone who got accepted plz explain the modulo operation that we have to do?? should we print result%c for R operation?? please explain</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69502"></a>
+<div id="c69502" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69502" class="active">finally ACed :)</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/siddhartha4444">siddhartha4444</a></strong><span style="color:#828282"> @ 4 Jan 2014 01:37 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">finally ACed :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69508"></a>
+<div id="c69508" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69508" class="active">Where should the modulo</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/kk1kk1_3">kk1kk1_3</a></strong><span style="color:#828282"> @ 4 Jan 2014 01:48 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Where should the modulo operation need to be used?Please clarify.Tired of getting wrong answer again and again.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69519"></a>
+<div id="c69519" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69519" class="active">@firebeard Operation is</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/deepsaggas">deepsaggas</a></strong><span style="color:#828282"> @ 4 Jan 2014 02:16 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@firebeard Operation is applied on L[i...N] not on L[1.....N].
+@prasu_newbie I think u need to print result%c for R operation</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69562"></a>
+<div id="c69562" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69562" class="active">All answers are to be printed</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/logic_max">logic_max</a></strong><span style="color:#828282"> @ 4 Jan 2014 04:15 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">All answers are to be printed %C. This part is not clear from the problem statement.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69721"></a>
+<div id="c69721" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69721" class="active">sadly, the question is ill</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/vidhant">vidhant</a></strong><span style="color:#828282"> @ 4 Jan 2014 09:09 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">sadly, the question is ill specified!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69760"></a>
+<div id="c69760" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69760" class="active">Awesome question got AC after</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sp1rs">sp1rs</a></strong><span style="color:#828282"> @ 4 Jan 2014 09:51 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Awesome question got AC after several attempts ...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69763"></a>
+<div id="c69763" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69763" class="active">@admin or @yellow_agony:</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shipu">shipu</a></strong><span style="color:#828282"> @ 4 Jan 2014 09:53 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@admin or @yellow_agony: what's the limit of S ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69767"></a>
+<div id="c69767" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69767" class="active">Attention: something is not</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/karolis_kusas">karolis_kusas</a></strong><span style="color:#828282"> @ 4 Jan 2014 10:00 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Attention: something is not correct with the specified input. Either L[i] are not on the same line or A, B, C are not on the same line. In other words, it is better to avoid reading line by line...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69772"></a>
+<div id="c69772" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69772" class="active">@shipu read the question</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/anonymousins">anonymousins</a></strong><span style="color:#828282"> @ 4 Jan 2014 10:14 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@shipu read the question carefully :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69795"></a>
+<div id="c69795" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69795" class="active">Finally AC :) got a lot of</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/c0d3_k1ra">c0d3_k1ra</a></strong><span style="color:#828282"> @ 4 Jan 2014 10:28 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Finally AC :) got a lot of TLEs...This problem took me 6 hrs.. but after solving it i can say it was worth it :D... Suggestion: Think out of box(time limit is strict) .. 
+
+@yellow_agony: awsome problem dude :D.. this problem taught me something... :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69798"></a>
+<div id="c69798" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69798" class="active">Cant understand the &quot;all</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/kartik95">kartik95</a></strong><span style="color:#828282"> @ 4 Jan 2014 10:31 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Cant understand the "all calculations done modulo C" part. Anybody?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69818"></a>
+<div id="c69818" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69818" class="active">@admin(or those whose code</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/ankitkapoor00">ankitkapoor00</a></strong><span style="color:#828282"> @ 4 Jan 2014 10:42 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@admin(or those whose code got AC'ed)...
+Is the output displayed after each test case or after all test cases??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69821"></a>
+<div id="c69821" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69821" class="active">STill WA :(</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/anonymousins">anonymousins</a></strong><span style="color:#828282"> @ 4 Jan 2014 10:45 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">STill WA :(</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69846"></a>
+<div id="c69846" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69846" class="active">@ankitkapoor00 you can give</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/c0d3_k1ra">c0d3_k1ra</a></strong><span style="color:#828282"> @ 4 Jan 2014 11:22 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@ankitkapoor00 you can give output of each test case in anyway u want.. i will suggest giving output after each test case.. not evry ..</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69854"></a>
+<div id="c69854" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69854" class="active">@anonymousins You cannot ask</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/c0d3_k1ra">c0d3_k1ra</a></strong><span style="color:#828282"> @ 4 Jan 2014 11:27 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@anonymousins You cannot ask for test cases brother :) it is an ongoin competition . Read the FAQ for what kind of comments you should post</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69855"></a>
+<div id="c69855" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69855" class="active">@c0d3_k1ra  sorry bro</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/anonymousins">anonymousins</a></strong><span style="color:#828282"> @ 4 Jan 2014 11:34 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@c0d3_k1ra  sorry bro</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69921"></a>
+<div id="c69921" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69921" class="active">@praneethgb please read what</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/anonymousins">anonymousins</a></strong><span style="color:#828282"> @ 5 Jan 2014 10:52 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@praneethgb please read what @c0d3_k1ra  mentioned</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69966"></a>
+<div id="c69966" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69966" class="active">If there are all RRRRR `s in</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/ndof">ndof</a></strong><span style="color:#828282"> @ 5 Jan 2014 02:20 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">If there are all RRRRR `s in String then .... we should  output L[i....N] as it is or after modulo operation on L[1...N] ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69976"></a>
+<div id="c69976" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69976" class="active">need guidance on the first</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/tracert_123">tracert_123</a></strong><span style="color:#828282"> @ 5 Jan 2014 02:27 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">need guidance on the first test case...1 1 1 -&gt; 3 3 3 -&gt; 9 9 9 ...it should be 9 9 9 as B is multiplied to all nos in the list...but it is given 3 3 9..</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69984"></a>
+<div id="c69984" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69984" class="active">@tracert_123 read carefully</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/snehansu6631">snehansu6631</a></strong><span style="color:#828282"> @ 5 Jan 2014 03:02 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@tracert_123 read carefully add/reverse/multiply to numbers from i to N not from 1 to N</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69988"></a>
+<div id="c69988" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69988" class="active">Tried JAVA, C++, python same</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sunnyshah28">sunnyshah28</a></strong><span style="color:#828282"> @ 5 Jan 2014 03:25 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Tried JAVA, C++, python same code, same logic! At last JAVA did it for me!! Keep an eye on MOD!!! finally AC :)))))))</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69994"></a>
+<div id="c69994" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-69994" class="active">in &quot;RRRR&quot; string modulo is</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/Anish garg">Anish garg</a></strong><span style="color:#828282"> @ 5 Jan 2014 03:42 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">in "RRRR" string modulo is needed or not...........??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70023"></a>
+<div id="c70023" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-70023" class="active">these TLEs killing me.....</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/jashan">jashan</a></strong><span style="color:#828282"> @ 5 Jan 2014 05:18 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">these TLEs killing me.....</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70045"></a>
+<div id="c70045" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-70045" class="active">reversing L[i..n] means if</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/damn_me">damn_me</a></strong><span style="color:#828282"> @ 5 Jan 2014 06:35 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">reversing L[i..n] means if the list is 12 23 46, then reverse operation shd give 46 23 12 ..
+m i right? or is it related with reversing the number at that position??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70113"></a>
+<div id="c70113" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-70113" class="active">@shasha1s2 can you please</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/damn_me">damn_me</a></strong><span style="color:#828282"> @ 5 Jan 2014 10:30 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@shasha1s2 can you please tell the exact meaning of reverse..??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70131"></a>
+<div id="c70131" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-70131" class="active">@admin...if you have posted</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/r4radhe">r4radhe</a></strong><span style="color:#828282"> @ 5 Jan 2014 11:21 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@admin...if you have posted the problem on codechef, then please answer them also :(
+See ... how many geeks are waiting for your glimpse.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70171"></a>
+<div id="c70171" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-70171" class="active">What is if no add o multiply</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/vlade087">vlade087</a></strong><span style="color:#828282"> @ 6 Jan 2014 05:13 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">What is if no add o multiply operation is L[i] % C?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70174"></a>
+<div id="c70174" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-70174" class="active">y wrong ans in python :( for</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shubham1402">shubham1402</a></strong><span style="color:#828282"> @ 6 Jan 2014 05:35 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">y wrong ans in python :( for all Reverse do we need to print num%c ??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70181"></a>
+<div id="c70181" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/MTRICK#comment-70181" class="active">@damn_me, i think the reverse</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/a1a1_13">a1a1_13</a></strong><span style="color:#828282"> @ 6 Jan 2014 07:42 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@damn_me, i think the reverse operation changes the order of the elements in the string.
+I have got 9 WA's now, some explanation would help.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<div class="box">
+  <h2 class="title"><hr></h2>  <div class="content"><span style="font-weight:bold;color:#777;">Need help? Post a comment. But before that please spare a moment to read the <a href="http://discuss.codechef.com/questions/855/what-kind-of-comment-should-i-post-on-the-problem-page" target="_blank">guidelines</a>.</span><form action="/comment/reply/4302274"  accept-charset="UTF-8" method="post" id="comment-form">
+<div><div class="form-item">
+ <label>Your name: </label>
+ adityax10
+</div>
+<div class="form-item" id="edit-comment-wrapper">
+ <label for="edit-comment">Comment: <span class="form-required" title="This field is required.">*</span></label>
+ <textarea cols="60" rows="5" name="comment" id="edit-comment"  class="form-textarea resizable required"></textarea>
+</div>
+<input type="hidden" name="form_build_id" id="form-db0304d2868e09305bf39b8ae5162048" value="form-db0304d2868e09305bf39b8ae5162048"  />
+<input type="hidden" name="form_token" id="edit-form-token" value="9252b46a0b9dac2ba64c54b583b54259"  />
+<input type="hidden" name="form_id" id="edit-comment-form" value="comment_form"  />
+<input type="submit" name="op" id="edit-submit" value="Save"  class="form-submit" />
+
+</div></form>
+</div>
+</div>
+</div>
+                                                                </div>
+                                                                <div class="primary-colum-width-right">
+                                                                    <div class="content-spacer-b">
+                                                                        <div id="block-problem_status-0" class="block block-problem_status">
+  <div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>
+  <div class="content">
+        <div class="center topbox-small-1" style="margin-left:0px;"><h3>SUCCESSFUL SUBMISSIONS<h3></div><br/>
+		<div id="rankContentDiv" class="table-results maintable">
+				<p align="center"><img src="/sites/all/themes/abessive/images/ajax-loader.gif" /> Fetching successful submissions</p>
+				<input type="hidden" id="pcode" value="MTRICK" name=   "pcode" />
+				<input type="hidden" id="ccode" value="JAN14" name=   "pcode" />
+				<input type="hidden" name="userid" id="userid" value="102389" />
+			<script type="text/javascript">
+				onload_getpage_ssubmissions("next");
+			</script>
+		</div>  </div>
+  <div class="r5"></div><div class="r4"></div><div class="r3"></div><div class="r2"></div><div class="r1 b"></div>
+</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <img class="content-wrapper-header" src="/sites/all/themes/abessive/images/content-wrapper-bootm-big.gif"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                                    <div id="footer" class="wrapper">
+                        <!--<div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>-->
+                        <div class="content clear-block">
+                            <!-- Footer Contents -->
+                            <div id="block-block-13" class="block block-block block-header">
+  <div class="content">
+        <script language="javascript" type="text/javascript">
+function formatTime(ts) {
+  now = new Date(ts);
+ 
+  localtime = new Date();
+  hour = now.getHours();
+  min = now.getMinutes();
+  sec = now.getSeconds();
+  
+  if (min <= 9) {
+	 min = "0" + min;
+  }
+  if (sec <= 9) {
+	 sec = "0" + sec;
+  }
+  if (hour > 12) {
+	 hour = hour - 12;
+	 add = " PM";
+  } else {
+	 hour = hour;
+	 add = " AM";
+  }
+  if (hour == 12) {
+	 add = " PM";
+  }
+  if (hour == 00) {
+	 hour = "12";
+  }
+	
+  $('#server-time').html(((hour<=9) ? "0" + hour : hour) + ":" + min + ":" + sec + add);
+  
+  nextSec = (now.getTime() + 1000);
+  
+  setTimeout("formatTime("+nextSec+")", 1000);
+}
+function getDtTimeZone() 
+{
+var rightNow = new Date();
+var toDay = new Date(rightNow.getFullYear(), 0, 1, 0, 0, 0, 0);
+var temp = toDay.toGMTString();
+var date2 = new Date(temp.substring(0, temp.lastIndexOf(" ") -1));
+var stdTime = (toDay - date2) / (1000 * 60 * 60);
+return stdTime;
+}
+/*var d=new Date();
+$.ajax({
+url: '/umtza',
+type:'POST',
+data: 'umtza='+d.toString(),
+});
+*/
+</script>
+<div id="disclaimer">CodeChef is a non-commercial competitive programming community</div>
+<div class="inner-wrapper">
+<div class="cols-2">
+<div id="secondary-nav">
+<ul>
+    <li><a href="http://www.codechef.com/aboutus/">About CodeChef</a></li>
+    <li><a target="_blank" href="http://www.directi.com/">About Directi</a></li>
+    <li><a href="http://www.codechef.com/ceoscorner/">CEO's Corner</a></li>
+    <li><a href="http://www.codechef.com/c-programming">C-Programming</a></li>
+    <li><a href="http://www.codechef.com/Programming-Languages">Programming Languages</a></li>
+    <li><a href="http://www.codechef.com/contactus">Contact Us</a></li>
+</ul>
+</div>
+<div id="copyright" class="cols-2">&copy; 2009 <a style="color: rgb(0, 0, 0);" href="http://www.directi.com">Directi Group</a>.  All Rights Reserved.  CodeChef uses SPOJ &copy; by <a style="color: rgb(0, 0, 0);" href="http://www.sphere-research.com">Sphere Research Labs</a></div>
+<div id="copyright-msg">In order to report copyright violations of any kind, send in an email to <a href="mailto:copyright@codechef.com">copyright@codechef.com</a></div>
+</div>
+<div align="right" class="cols-2-right" style="float:right;">
+<div id="sponsor-strip"><a target="_blank" href="http://www.directi.com"><img alt="CodeChef a product of Directi" src="/sites/all/themes/abessive/images/footer-sponsor-strip.gif" /></a><br />
+<span>The time now is: <span id="server-time"></span></span>
+				<script language='javascript'>
+						formatTime('January 06, 2014 09:18:22');
+					</script></div>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-53602-42");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+
+<!-- Google Code for Visitors that do not sign-up Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1066618556;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "666666";
+var google_conversion_label = "gbUUCPTlhAIQvJ3N_AM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1066618556/?label=gbUUCPTlhAIQvJ3N_AM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!-- Google Code for RM codechef Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 968176136;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "iDk7CPDZ7wMQiOTUzQM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/968176136/?label=iDk7CPDZ7wMQiOTUzQM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<div class='cc-footer-seo'>
+<span><a href='/'>CodeChef</a> - A Platform for Aspiring Programmers</span>
+<p>CodeChef was created as a platform to help programmers make it big in the world of algorithms, <strong>computer programming</strong> and <strong>programming contests</strong>. At CodeChef we work hard to revive the geek in you by hosting a <strong>programming contest</strong> at the start of the month and another smaller programming challenge in the middle of the month. We also aim to have training sessions and discussions related to <strong>algorithms, binary search</strong>, technicalities like <strong>array size</strong> and the likes. Apart from providing a platform for <strong>programming competitions</strong>, CodeChef also has various algorithm tutorials and forum discussions to help those who are new to the world of <strong>computer programming</strong>.</p>
+<p></p>
+<span><a href='/problems/easy'>Practice Section</a> - A Place to hone your 'Computer Programming Skills'</span>
+<p>Try your hand at one of our many practice problems and submit your solution in a language of your choice. Our <strong>programming contest</strong> judge accepts solutions in over 35+ programming languages. Preparing for coding contests were never this much fun! Receive points, and move up through the CodeChef ranks. Use our practice section to better prepare yourself for the multiple <strong>programming challenges</strong> that take place through-out the month on CodeChef. </p>
+<p></p>
+<span><a href='/contests/'>Compete</a> - Monthly Programming Contests and Cook-offs</span>
+<p>Here is where you can show off your <strong>computer programming</strong> skills. Take part in our 10 day long monthly <strong>coding contest</strong> and the shorter format Cook-off <strong>coding contest</strong>. Put yourself up for recognition and win great prizes. Our <strong>programming contests</strong> have prizes worth up to Rs.20,000 and $700lots more CodeChef goodies up for grabs. </p>
+<p></p>
+<span><a href='http://discuss.codechef.com/'>Discuss</a></span>
+<p>Are you new to <strong>computer programming</strong>? Do you need help with algorithms? Then be a part of CodeChef's Forums and interact with all our programmers - they love helping out other programmers and sharing their ideas. Have discussions around <strong>binary search, array size, branch-and-bound, Dijkstra's algorithm, Encryption algorithm</strong> and more by visiting the CodeChef Forums and Wiki section.</p>
+<p></p>
+<span><a href='/community'>CodeChef Community</a></span>
+<p>As part of our Educational initiative, we give institutes the opportunity to associate with CodeChef in the form of Campus Chapters. Hosting <strong>online programming competitions</strong> is not the only feature on CodeChef. You can also host a <strong>coding contest</strong> for your institute on CodeChef, organize an <strong>algorithm</strong> event and be a guest author on our blog. </p>
+<p></p>
+<span><a href='/goforgold'>Go For Gold</a></span>
+<p>The Go for Gold Initiative was launched about a year after CodeChef was incepted, to help prepare Indian students for the <strong>ACM ICPC</strong> World Finals competition. In the run up to the <strong>ACM ICPC</strong> competition, the Go for Gold initiative uses CodeChef as a platform to train students for the <strong>ACM ICPC</strong> competition via multiple warm up contests. As an added incentive the Go for Gold initiative is also offering over Rs.8 lacs to the Indian team that beats the 29th position at the <strong>ACM ICPC</strong> world finals. Find out more about the Go for Gold and the <strong>ACM ICPC</strong> competition <a href="/goforgold">here</a>.</p>
+</div>  </div>
+</div>
+<div id="block-block-48" class="block block-block block-header">
+  <div class="content">
+        <script type ='text/javascript' src ='/misc/jquery.cookie.js'>  </script><script type ='text/javascript' src ='/misc/notification.js'>  </script>  </div>
+</div>
+                        </div>
+                    </div>
+                                      <div id="fb-root"></div>
+      <script type="text/javascript">
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId  : '191217060453',
+            status : true, // check login status
+            cookie : true, // enable cookies to allow the server to access the session
+            xfbml  : true,
+            logging: '0',
+            channelURL: 'http://www.codechef.com/sites/all/modules/fbconnect/channel.html',
+            oauth : true
+          });
+
+          jQuery(document).trigger('fb:init');
+        };
+
+        (function() {
+          var e = document.createElement('script');
+          e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+          e.async = true;
+          document.getElementById('fb-root').appendChild(e);
+        }());
+      </script>
+<div style="display: none"><form action="/JAN14/problems/MTRICK?destination=node%2F4302274"  accept-charset="UTF-8" method="post" id="fbconnect-autoconnect-form">
+<div><input type="submit" name="op" id="edit-connect" value="Connect"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-c1ca366b1a3170cc2bab454a9b6e59ea" value="form-c1ca366b1a3170cc2bab454a9b6e59ea"  />
+<input type="hidden" name="form_token" id="edit-fbconnect-autoconnect-form-form-token" value="bebd909d193a1527d1fe05b108c83119"  />
+<input type="hidden" name="form_id" id="edit-fbconnect-autoconnect-form" value="fbconnect_autoconnect_form"  />
+
+</div></form>
+</div>            </center>
+    </body>
+</html>
