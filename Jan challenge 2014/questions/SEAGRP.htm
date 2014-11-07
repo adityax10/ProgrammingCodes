@@ -1,0 +1,1801 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en" dir="ltr">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script>
+            (function(_,e,rr,s){_errs=[s];var c=_.onerror;_.onerror=function(){var a=arguments;_errs.push(a);
+            c&&c.apply(this,a)};var b=function(){var c=e.createElement(rr),b=e.getElementsByTagName(rr)[0];
+            c.src="//beacon.errorception.com/"+s+".js";c.async=!0;b.parentNode.insertBefore(c,b)};
+            _.addEventListener?_.addEventListener("load",b,!1):_.attachEvent("onload",b)})
+            (window,document,"script","4e7c8fce06a9ab05530008e5");
+        </script>
+
+		<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+        <title>Sereja and Graph | CodeChef</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="programming, language, algorithm, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM" />
+<link rel="shortcut icon" href="/misc/favicon.ico" type="image/x-icon" />
+        <link type="text/css" rel="stylesheet" media="all" href="http://www.codechef.com/sites/default/files/css/css_a46986be24577e3f62b453db092a0b61.css" />
+        <link rel="stylesheet" type="text/css" href="/sites/all/themes/abessive/acmkanpurproblem.css" />
+        <script type="text/javascript" src="/sites/all/modules/jquery_update/replace/jquery.min.js?R"></script>
+<script type="text/javascript" src="/misc/drupal.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/fbconnect/fbconnect.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/fivestar/js/fivestar.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/lightbox2/js/lightbox.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
+<script type="text/javascript" src="/misc/common.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/tableofcontents/jquery.scrollTo-min.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/tableofcontents/jquery.localscroll-min.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/tableofcontents/tableofcontents.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/codechef_recent_comments/codechef_recent_comments.js?R"></script>
+<script type="text/javascript" src="/misc/textarea.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","fbconnect":{"user_pictures":"allow","language_code":"en_US","app_id":"191217060453","debug":0,"connect_js":"document.location.protocol + '\/\/connect.facebook.net\/en_US\/all.js'","loginout_mode":"manual","invite_name":"CodeChef","fast_reg_mode":0,"fast_reg_autoname":0,"fbuid":null,"user":{"uid":"102389","fbuid":null}},"fivestar":{"titleUser":"Your rating: ","titleAverage":"Average: ","feedbackSavingVote":"Saving your vote...","feedbackVoteSaved":"Your vote has been saved.","feedbackDeletingVote":"Deleting your vote...","feedbackVoteDeleted":"Your vote has been deleted."},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)sites\/default\/files","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"eeedec","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":1,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":0,"disable_resize":0,"disable_zoom":0,"force_show_nav":0,"show_caption":true,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\u003e\u003ckbd\u003ex\u003c\/kbd\u003e\u003c\/a\u003e to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":500,"iframe_height":70,"iframe_border":1,"enable_video":0}});
+//--><!]]>
+</script>
+        <meta property="og:title" content="Sereja and Graph" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://www.codechef.com/JAN14/problems/SEAGRP" />
+        <meta property="og:image" content="http://www.codechef.com/misc/fb-chef.gif" />
+        <meta property="og:site_name" content="CodeChef" />
+        <meta property="fb:app_id" content="155442717838457" />
+
+		<script type="text/javascript">
+				</script>
+
+    </head>
+    <body  class="sidebar-right"><center>
+
+            <div id="header" class="wrapper">
+                <div class="inner-wrapper">
+                    <!-- Header -->
+                    <div id="logo-floater" class="cols-2">
+                        <a href="/" title=""><img src="/sites/all/themes/abessive/logo.png" alt="CodeChef is a non-commercial competitive programming community" id="logo" /><span></span></a>                    </div>
+                    <div class="cols-2">
+                        <div id="custom-login">
+                                <!--Hello <strong>Admin</strong>, Check your <strong><a href="">Account</a></strong> or <a href="/logout">Log Out</a>-->
+                            <div id="user-bar">
+                <div class="login-user"> 
+                    <table cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+        <span>
+            Hello adityax10! <br />
+            <a href="/users/adityax10" title="Edit Your Account">Account</a>
+            or <a href="/logout">Log Out</a>
+        </span></td>
+                        </tr>
+                    </table>
+                </div></div>
+        <div id="facebook-login">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>Login or<br>Signup with</td>
+                    <td><span class="facebook-button"><div class="fb-login-button"  size="medium" onlogin="facebook_onlogin_ready();" background="dark" v="2" scope="publish_stream, offline_access">Connect</div></span></td>
+                </tr>
+            </table>
+        </div>    
+        <div class="question-note">
+            <a href="#">
+                <span class="icon-question">Note</span>
+                <div class="tooltip">
+                    <ul>
+                        <li>Publicize your achievements on your Facebook Wall.</li>
+                        <li>Challenge your friends or ask them for help.</li>
+                    </ul>
+                </div>
+            </a>
+        </div>                        </div>
+
+                        <div id="block-nice_menus-1" class="block block-nice_menus block-header">
+  <div class="content">
+    <h2><span class="nice-menu-hide-title">Site Navigation</span></h2>    <ul class="nice-menu nice-menu-down" id="nice-menu-1"><li id="menu-302" class="menuparent menu-path-problems-easy"><a href="/problems/easy" title="">PRACTICE</a><ul><li id="menu-303" class="menu-path-problems-easy"><a href="/problems/easy" title="">Easy</a></li>
+<li id="menu-304" class="menu-path-problems-medium"><a href="/problems/medium" title="">Medium</a></li>
+<li id="menu-305" class="menu-path-problems-hard"><a href="/problems/hard" title="">Hard</a></li>
+<li id="menu-1819" class="menu-path-problems-challenge"><a href="/problems/challenge" title="">Challenge</a></li>
+<li id="menu-1376" class="menu-path-problems-extcontest"><a href="/problems/extcontest" title="">Peer</a></li>
+<li id="menu-2602" class="menu-path-problems-school"><a href="/problems/school" title="">School</a></li>
+</ul>
+</li>
+<li id="menu-309" class="menuparent menu-path-contests"><a href="/contests" title="">COMPETE</a><ul><li id="menu-2203" class="menu-path-www.codechef.com-contests"><a href="http://www.codechef.com/contests" title="">All Contests</a></li>
+<li id="menu-4726" class="menu-path-www.codechef.com-JAN14"><a href="http://www.codechef.com/JAN14" title="">January Challenge 2014</a></li>
+<li id="menu-4724" class="menu-path-www.codechef.com-KGP13ACM"><a href="http://www.codechef.com/KGP13ACM" title="">ACM-ICPC Kharagpur onsite regionals 2013 : Replay</a></li>
+<li id="menu-4721" class="menu-path-www.codechef.com-LTIME07"><a href="http://www.codechef.com/LTIME07" title="">December Lunchtime 2013</a></li>
+</ul>
+</li>
+<li id="menu-138" class="menuparent menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">DISCUSS</a><ul><li id="menu-139" class="menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">Forums</a></li>
+<li id="menu-140" class="menu-path-blog.codechef.com-"><a href="http://blog.codechef.com/" title="">Blog</a></li>
+<li id="menu-920" class="menu-path-wiki-"><a href="/wiki/" title="">Wiki</a></li>
+<li id="menu-2202" class="menu-path-https--www.facebook.com-CodeChef"><a href="https://www.facebook.com/CodeChef" title="">Facebook</a></li>
+<li id="menu-141" class="menu-path-www.twitter.com-codechef"><a href="http://www.twitter.com/codechef" title="">Twitter</a></li>
+</ul>
+</li>
+<li id="menu-143" class="menuparent menu-path-node-124098"><a href="/community" title="">COMMUNITY</a><ul><li id="menu-733" class="menu-path-node-157517"><a href="/hostyourcontest" title="Hosting Contest on CodeChef">Host your Contest</a></li>
+<li id="menu-2310" class="menu-path-www.codechef.com-goforgold"><a href="http://www.codechef.com/goforgold" title="">Go for Gold</a></li>
+<li id="menu-3830" class="menu-path-www.codechef.com-campus_chapter-about"><a href="http://www.codechef.com/campus_chapter/about" title="">Campus Chapter</a></li>
+</ul>
+</li>
+<li id="menu-147" class="menuparent menu-path-node-3"><a href="/help" title="">HELP</a><ul><li id="menu-643" class="menu-path-www.codechef.com-wiki-faq"><a href="http://www.codechef.com/wiki/faq" title="">Frequently Asked Questions</a></li>
+<li id="menu-710" class="menu-path-www.codechef.com-wiki-faq-problem-setters"><a href="http://www.codechef.com/wiki/faq-problem-setters" title="">FAQ for problem setters</a></li>
+<li id="menu-1389" class="menu-path-node-313543"><a href="/problemsetting" title="Codechef Problem Creation">Problem Setting</a></li>
+<li id="menu-850" class="menu-path-www.codechef.com-wiki-tutorials"><a href="http://www.codechef.com/wiki/tutorials" title="">Tutorials</a></li>
+<li id="menu-2200" class="menu-path-www.codechef.com-long-ranklist-AX"><a href="http://www.codechef.com/long/ranklist/AX" title="Long contest rankings list">Long Contest Ranks</a></li>
+<li id="menu-2199" class="menu-path-www.codechef.com-short-ranklist-AX"><a href="http://www.codechef.com/short/ranklist/AX" title="Short contest rankings list">Short Contest Ranks</a></li>
+<li id="menu-1820" class="menu-path-node-503865"><a href="/event-calendar" title="Event Calendar">Event Calendar</a></li>
+<li id="menu-2372" class="menu-path-discuss.ww2.codechef.com-top-users-"><a href="http://discuss.ww2.codechef.com/top/users/" title="">Top Contributors on Discuss</a></li>
+</ul>
+</li>
+<li id="menu-150" class="menuparent menu-path-node-1"><a href="/aboutus" title="">ABOUT</a><ul><li id="menu-151" class="menu-path-node-1"><a href="/aboutus" title="">About CodeChef</a></li>
+<li id="menu-849" class="menu-path-node-178314"><a href="/team" title="Team CodeChef">Team CodeChef</a></li>
+<li id="menu-708" class="menu-path-node-157468"><a href="/press" title="Press Room">Press Room</a></li>
+<li id="menu-1312" class="menu-path-www.codechef.com-financials-"><a href="http://www.codechef.com/financials/" title="">CodeChef Financials</a></li>
+<li id="menu-1313" class="menu-path-www.codechef.com-sponsorships"><a href="http://www.codechef.com/sponsorships" title="">CodeChef Sponsorships</a></li>
+<li id="menu-709" class="menu-path-node-157470"><a href="/ceoscorner" title="CEO&#039;s Corner">CEO&#039;s Corner</a></li>
+<li id="menu-1858" class="menu-path-node-614485"><a href="/contactus" title="">Contact Us</a></li>
+<li id="menu-152" class="menu-path-www.directi.com-"><a href="http://www.directi.com/" title="">About Directi</a></li>
+</ul>
+</li>
+</ul>
+  </div>
+</div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /HEADER -->
+            <center>
+                <table cellspacing="0" cellpadding="10" id="maintable" class="maintable">
+                    <tr>
+                        <td class="content" width="99%">
+                            <div class="wrapper" id="content-regions">
+                                <div class="inner-wrapper rounded-cr-body">
+                                    <div class="rounded-cr-header">
+                                        <div class="rounded-cr-footer">
+                                            <div id="breadcrumb"><div class="breadcrumb"><a href="/">Home</a>&nbsp;&raquo;&nbsp;<a href="/contests/">Compete</a>&nbsp;&raquo;&nbsp;<a href="/JAN14/">January Challenge 2014</a>&nbsp;&raquo;&nbsp;Sereja and Graph</div></div>
+                                            <div id="primary-colum-pad">
+                                                <div id="primary-colum-wrapper">
+                                                    <img class="content-wrapper-header" src="/sites/all/themes/abessive/images/content-wrapper-top-big.gif"/>
+                                                    <div id="problem-page">
+                                                        <div class="prob">
+                                                            <div class="primary-col-wrapper">
+                                                                                                                                                                                                                                                                                                                                <table class="pagetitle-prob" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                                    <tr>
+                                                                        <td width="55%">
+                                                                            <h1>Sereja and Graph</h1>
+                                                                            <p>Problem code: SEAGRP</p>
+																			                                                                            <fb:like send="true" width="450" show_faces="false" action="recommend" font="verdana"></fb:like>
+                                                                        </td>
+                                                                        <td>
+                                                                            <ul class="button-list">
+                                                                                <li style="display:<?php print $node->answerDisplay; ?>"><a href ="/JAN14/submit/SEAGRP">Submit</a></li>                                                                                <li><a href="/JAN14/status/SEAGRP,adityax10">My Submissions</a></li>                                                                                <li><a href="/JAN14/status/SEAGRP">All Submissions</a></li>
+                                                                            </ul>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <div class="primary-colum-width-left">
+                                                                    <div id="node-4302280" class="node clear-block">
+        
+    <div class="meta">
+        
+            </div>
+
+    <div class="content">
+<h3>Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/JAN14/mandarin/SEAGRP.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/JAN14/russian/SEAGRP.pdf">Russian</a>.</h3>
+<p>Sereja has undirected graph, which consists of <b>n</b> vertexes and <b>m</b> edges. Sereja can delete edges from the graph. Now Sereja is interested in one question : is it possible to delete edges in the graph so that the degree of each vertex in the graph will be equal <b>1</b>?</p>
+<p>Please, help Sereja.</p>
+<h3>Input</h3>
+<p>First line contains integer <b>T</b>. <b>T</b> testcases follow. The first line of each testcase contains integers <b>n</b> and <b>m</b>. Following <b>m</b> lines contain descriptions of the edges of the graph, each line contains two numbers — indexes of the vertexes, which are connected with edge. There can be multiple edges in the graph, but can not be any loops.</p>
+<h3>Output</h3>
+<p>For each test case print <b>"YES"</b>, if you can remove the edges so that the degrees of all vertexes will be equal to <b>1</b>, and <b>"NO"</b> otherwise. Print the words without quotation marks.</p>
+<h3>Constraints</h3>
+
+<ul>
+<li><b>1</b> = <b>T</b> = <b>10</b></li>
+<li><b>1</b> = <b>n, m</b> = <b>100</b></li>
+</ul>
+<h3>Example</h3>
+<pre><b>Input:</b>
+3
+2 2
+1 2
+1 2
+3 2
+1 2
+2 3
+4 6
+1 2
+1 3
+1 4
+2 3
+2 4
+3 4
+
+<b>Output:</b>
+YES
+NO
+YES
+</pre><p> </p>    </div>
+    <hr />
+    <table cellspacing="0" cellpadding="0" align="left">
+        <tr>
+            <td width="14%">Author:</td>
+            <td><a href="/users/sereja">sereja</a></td>
+		</tr>
+				                <tr>
+            <td width="14%">Tags</td>
+            <td><a class='problem-tag-small ' href='/tags/problems/sereja'>
+                    sereja
+                </a></td>
+        </tr>
+        		<tr>
+            <td width="14%">Date Added:</td>
+            <td>9-06-2013</td>
+        </tr>
+        <tr>
+            <td width="14%">Time Limit:</td>
+            <td>1 sec</td>
+        </tr>
+        <tr>
+            <td width="14%">Source Limit:</td>
+            <td>50000 Bytes</td>
+        </tr>
+        <tr>
+            <td width="14%">Languages:</td>
+            <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.8.1, CPP11, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAR, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td>
+        </tr>
+    </table>
+    <p style="clear:left;"><br /></p>
+    <ul class="button-list button-list-left">
+        <li style="display:block"><a href ="/JAN14/submit/SEAGRP">Submit</a></li>
+    </ul>
+    <hr />
+    <h2 style="text-decoration: none;">Comments</h2>
+</div>
+<div id="comments">
+  <a id="new"></a>
+<a id="comment-68987"></a>
+<div id="c68987" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-68987" class="active">Another sereja question :D</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/yashkumar18">yashkumar18</a></strong><span style="color:#828282"> @ 3 Jan 2014 03:01 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Another sereja question :D</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69038"></a>
+<div id="c69038" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69038" class="active">what if degree of all the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/chandan2495">chandan2495</a></strong><span style="color:#828282"> @ 3 Jan 2014 04:36 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">what if degree of all the vertices are already 1 and we have no edge to remove?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69093"></a>
+<div id="c69093" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69093" class="active">@chandan2495: Then just give</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/alex3er">alex3er</a></strong><span style="color:#828282"> @ 3 Jan 2014 05:27 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@chandan2495: Then just give "YES" answer</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69107"></a>
+<div id="c69107" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69107" class="active">In the explanation of Input</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/anur06">anur06</a></strong><span style="color:#828282"> @ 3 Jan 2014 05:51 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">In the explanation of Input it is said that the graph won't have any loops...but the first test case itself have a loop between vertices 1 and 2. Please someone clear my doubt</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69116"></a>
+<div id="c69116" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69116" class="active">@anur06 
+1st case: 1 2 1 2</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/mpthegreat_5">mpthegreat_5</a></strong><span style="color:#828282"> @ 3 Jan 2014 05:58 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@anur06 
+1st case: 1 2 1 2 means there are multiple edges between 1 and 2.
+if it was 1 1 or 2 2 then it shows loop on vertex 1 or 2.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69210"></a>
+<div id="c69210" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69210" class="active">@bhavik199366 stop asking</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/betlista">betlista</a></strong><span style="color:#828282"> @ 3 Jan 2014 08:18 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@bhavik199366 stop asking such questions and read guidelines - <a href="http://discuss.codechef.com/questions/855/what-kind-of-comment-should-i-post-on-the-problem-page" title="http://discuss.codechef.com/questions/855/what-kind-of-comment-should-i-post-on-the-problem-page">http://discuss.codechef.com/questions/855/what-kind-of-comment-should-i-...</a></div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69224"></a>
+<div id="c69224" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69224" class="active">Can somebody please explain</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/aldiablo">aldiablo</a></strong><span style="color:#828282"> @ 3 Jan 2014 08:49 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Can somebody please explain the 3rd test case... I am having trouble understanding .</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69231"></a>
+<div id="c69231" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69231" class="active">Nice one :)</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/spandanpathak">spandanpathak</a></strong><span style="color:#828282"> @ 3 Jan 2014 09:01 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Nice one :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69249"></a>
+<div id="c69249" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69249" class="active">I never thought question&#039;s</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/deepsaggas">deepsaggas</a></strong><span style="color:#828282"> @ 3 Jan 2014 09:58 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">I never thought question's difficulty can be increased just by modifying the way of asking the question itself. Nice One Sereja :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69264"></a>
+<div id="c69264" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69264" class="active">@admin: equal signs in the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/cyberax">cyberax</a></strong><span style="color:#828282"> @ 3 Jan 2014 10:21 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@admin: equal signs in the constraints section mean probably "less or equal", right ? :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69285"></a>
+<div id="c69285" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69285" class="active">@cyberax: good point, for</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/betlista">betlista</a></strong><span style="color:#828282"> @ 3 Jan 2014 10:44 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@cyberax: good point, for sure it is &lt;=</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69290"></a>
+<div id="c69290" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69290" class="active">@deepsaggas: in third test</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/betlista">betlista</a></strong><span style="color:#828282"> @ 3 Jan 2014 10:46 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@deepsaggas: in third test case, the goal is f.e. graph with 2 edges 1-&gt;2 and 3-&gt;4 (not only possible solution)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69294"></a>
+<div id="c69294" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69294" class="active">in third case edges 1-2, 2-3,</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/code_jack">code_jack</a></strong><span style="color:#828282"> @ 3 Jan 2014 11:18 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">in third case edges 1-2, 2-3, 1-3 form a loop, while in the problem statement input is said to have NO LOOPS ? Is the test case wrong or am i misinterpreting ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69297"></a>
+<div id="c69297" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69297" class="active">What will be the indexes of</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/faisal47">faisal47</a></strong><span style="color:#828282"> @ 3 Jan 2014 11:28 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">What will be the indexes of cities??
+Are these 
+1&lt;= (indexes) &lt;=n ??
+(It is not clarified in the statement)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69300"></a>
+<div id="c69300" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69300" class="active">@betlista @cyberax ? how can</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shubham1402">shubham1402</a></strong><span style="color:#828282"> @ 3 Jan 2014 11:28 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@betlista @cyberax ? how can you say that equal to means less or equal ? if it is mentioned to be equal to 1 then we should take it as exactly equal to 1.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69305"></a>
+<div id="c69305" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69305" class="active">@code_jack i guess loops here</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/nikhil30">nikhil30</a></strong><span style="color:#828282"> @ 3 Jan 2014 11:30 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@code_jack i guess loops here implies self-loops and not cycle</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69309"></a>
+<div id="c69309" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69309" class="active">is the graph connected ?</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sayan_paul">sayan_paul</a></strong><span style="color:#828282"> @ 3 Jan 2014 11:36 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">is the graph connected ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69312"></a>
+<div id="c69312" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69312" class="active">@sayan_paul no dude not</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/c0d3_k1ra">c0d3_k1ra</a></strong><span style="color:#828282"> @ 3 Jan 2014 11:42 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@sayan_paul no dude not necessary</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69315"></a>
+<div id="c69315" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69315" class="active">wonderful question :)</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/kevind">kevind</a></strong><span style="color:#828282"> @ 3 Jan 2014 11:53 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">wonderful question :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69328"></a>
+<div id="c69328" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69328" class="active">same ques as faisal47.. as</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shakti11094">shakti11094</a></strong><span style="color:#828282"> @ 4 Jan 2014 12:08 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">same ques as faisal47.. as the individual indices of the vertices also between 1 ans 100 (both inclusive) or they can take any value ?? Its not given clear there.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69337"></a>
+<div id="c69337" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69337" class="active">Atleast explain the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shakti11094">shakti11094</a></strong><span style="color:#828282"> @ 4 Jan 2014 12:12 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Atleast explain the constraints properly.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69364"></a>
+<div id="c69364" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69364" class="active">is it necessary to remove an</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/rajat1293">rajat1293</a></strong><span style="color:#828282"> @ 4 Jan 2014 01:26 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">is it necessary to remove an edge, what if the graph is already in the desired condition ie all vertx have degree equal to 1</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69369"></a>
+<div id="c69369" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69369" class="active">given input Graph is &quot;always&quot;</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/kjtguyf">kjtguyf</a></strong><span style="color:#828282"> @ 4 Jan 2014 01:43 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">given input Graph is "always" connected ?( connected Graph: from each vertices we can travel all remaining vertices )</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69371"></a>
+<div id="c69371" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69371" class="active">100 points to question</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shubham1402">shubham1402</a></strong><span style="color:#828282"> @ 4 Jan 2014 01:48 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">100 points to question designer :) best way to frame a simple question :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69392"></a>
+<div id="c69392" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69392" class="active">Is the graph assumed to be</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/jaskaran_1">jaskaran_1</a></strong><span style="color:#828282"> @ 4 Jan 2014 03:28 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Is the graph assumed to be connected at the start?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69404"></a>
+<div id="c69404" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69404" class="active">can somebody explain the 3rd</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/ankitsablok89">ankitsablok89</a></strong><span style="color:#828282"> @ 4 Jan 2014 05:07 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">can somebody explain the 3rd test case, how is it possible to reduce the undirected graph given to a graph with degree 1 without losing the connectivity property of the graph?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69423"></a>
+<div id="c69423" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69423" class="active">nice problem, but problem</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/raihanruhin">raihanruhin</a></strong><span style="color:#828282"> @ 4 Jan 2014 09:02 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">nice problem, but problem statement is not.
+especially, this line is confusing.
+"There can be multiple edges in the graph, but can not be any loops."
+
+problem setter could say something like this: 
+"each line contains two numbers u and v (u ≠ v)  — indexes of the vertexes, which are connected with edge. "
+
+or like this:
+"there is no edge with the vertex itself"</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69457"></a>
+<div id="c69457" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69457" class="active">my DP solution gives TLE,
+any</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/reckster">reckster</a></strong><span style="color:#828282"> @ 4 Jan 2014 12:15 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">my DP solution gives TLE,
+any suggestion.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69460"></a>
+<div id="c69460" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69460" class="active">Twisted but easy one..;)</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/gorv">gorv</a></strong><span style="color:#828282"> @ 4 Jan 2014 12:22 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Twisted but easy one..;)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69468"></a>
+<div id="c69468" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69468" class="active">how can no of vertices be 1</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/vishalsharma">vishalsharma</a></strong><span style="color:#828282"> @ 4 Jan 2014 12:40 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">how can no of vertices be 1 and no of edges remain non-zero(corner case)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69492"></a>
+<div id="c69492" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69492" class="active">@Vishalasharma i don&#039;t think</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/okekeau">okekeau</a></strong><span style="color:#828282"> @ 4 Jan 2014 01:14 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@Vishalasharma i don't think we can have a case of 1 1 because they said no self loop</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69495"></a>
+<div id="c69495" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69495" class="active">This is definately easy</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/okekeau">okekeau</a></strong><span style="color:#828282"> @ 4 Jan 2014 01:15 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">This is definately easy</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69497"></a>
+<div id="c69497" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69497" class="active">Very Nice Question!!!! AC in</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/deepanshum007">deepanshum007</a></strong><span style="color:#828282"> @ 4 Jan 2014 01:19 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Very Nice Question!!!! AC in first attempt :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69504"></a>
+<div id="c69504" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69504" class="active">What is it with odd and even</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/okekeau">okekeau</a></strong><span style="color:#828282"> @ 4 Jan 2014 01:39 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">What is it with odd and even number of vertices my analysis keeps showing something about it but because of rules i can't say</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69532"></a>
+<div id="c69532" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69532" class="active">any corner critical cases</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shahbaaz31here">shahbaaz31here</a></strong><span style="color:#828282"> @ 4 Jan 2014 03:12 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">any corner critical cases guys..?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69537"></a>
+<div id="c69537" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69537" class="active">@okekeau I think we need to</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/thewanderer">thewanderer</a></strong><span style="color:#828282"> @ 4 Jan 2014 03:15 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@okekeau I think we need to find if the given graph contains 1-factor, but dunno what I'm doing wrong</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69542"></a>
+<div id="c69542" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69542" class="active">@thewandere i think we need</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/okekeau">okekeau</a></strong><span style="color:#828282"> @ 4 Jan 2014 03:36 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@thewandere i think we need to color the edges so as two visit vertices once...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69543"></a>
+<div id="c69543" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69543" class="active">ANY BODY WITH A NON EXPECTED</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/okekeau">okekeau</a></strong><span style="color:#828282"> @ 4 Jan 2014 03:38 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">ANY BODY WITH A NON EXPECTED INPUT</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69555"></a>
+<div id="c69555" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69555" class="active">Are the nodes numbered from 1</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/incognito_103">incognito_103</a></strong><span style="color:#828282"> @ 4 Jan 2014 04:06 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Are the nodes numbered from 1 to n? Is that always right?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69559"></a>
+<div id="c69559" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69559" class="active">is ti possible to have any</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/siddhant4">siddhant4</a></strong><span style="color:#828282"> @ 4 Jan 2014 04:10 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">is ti possible to have any test case with n=1....i dont think so...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69569"></a>
+<div id="c69569" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69569" class="active">if there are n vertex  ..can</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/ndof">ndof</a></strong><span style="color:#828282"> @ 4 Jan 2014 04:31 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">if there are n vertex  ..can any vertex have number(label) greater than n ? 
+like this
+1 
+2 1
+11 11</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69572"></a>
+<div id="c69572" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69572" class="active">Is it necessary that firstly</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/jayfartiyal">jayfartiyal</a></strong><span style="color:#828282"> @ 4 Jan 2014 04:38 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Is it necessary that firstly all the inputs should be taken and then print the output, or we can print answer for each set</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69584"></a>
+<div id="c69584" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69584" class="active">@ jayfartiyal No, It&#039;s not</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/nagendra085">nagendra085</a></strong><span style="color:#828282"> @ 4 Jan 2014 05:04 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@ jayfartiyal No, It's not necessary to print the output after taking all the inputs. You can print answers for each set of inputs ...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69594"></a>
+<div id="c69594" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69594" class="active">@admin the constraints say</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/juan_mata">juan_mata</a></strong><span style="color:#828282"> @ 4 Jan 2014 05:36 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@admin the constraints say 1=T=10 and 1=n,m=100. please correct this (i guess it should be &lt;=). also please give constraints on u and v (the indices of the vertices in each of the next m lines). my guess is they should be 1&lt;=u,v&lt;=n and u!=v, but please update us ASAP.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69610"></a>
+<div id="c69610" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69610" class="active">@admin plz give the ans</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/ak29">ak29</a></strong><span style="color:#828282"> @ 4 Jan 2014 06:51 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@admin plz give the ans for:-
+1
+1 1
+1 2
+i think it should be NO since no further deletion is possible.....clear my doubt if i am wrong</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69613"></a>
+<div id="c69613" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69613" class="active">phew,finally.. ^_^</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/swarnadeep saha">swarnadeep saha</a></strong><span style="color:#828282"> @ 4 Jan 2014 06:56 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">phew,finally.. ^_^</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69622"></a>
+<div id="c69622" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69622" class="active">Please explain the test cases</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/darthali2006">darthali2006</a></strong><span style="color:#828282"> @ 4 Jan 2014 07:06 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Please explain the test cases</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69626"></a>
+<div id="c69626" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69626" class="active">@swarnadeep saha, would you</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/incognito_103">incognito_103</a></strong><span style="color:#828282"> @ 4 Jan 2014 07:17 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@swarnadeep saha, would you please tell me whether you considered the nodes to be numbered from 1 to n?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69657"></a>
+<div id="c69657" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69657" class="active">@incognito_103,yes,the nodes</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/swarnadeep saha">swarnadeep saha</a></strong><span style="color:#828282"> @ 4 Jan 2014 08:30 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@incognito_103,yes,the nodes are numbered from 1.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69785"></a>
+<div id="c69785" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69785" class="active">PLease tell me whether the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/akshai">akshai</a></strong><span style="color:#828282"> @ 4 Jan 2014 10:21 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">PLease tell me whether the given graph is always connected?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69820"></a>
+<div id="c69820" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69820" class="active">plz tell who is the admin</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shakti11094">shakti11094</a></strong><span style="color:#828282"> @ 4 Jan 2014 10:43 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">plz tell who is the admin 'OFFICIALLY ' ???
+I need correct reply about the value of vertices,i.e. if they are aways less than equal to 'n' or not .</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69859"></a>
+<div id="c69859" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69859" class="active">@shakti11094 vertex always</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sp1rs">sp1rs</a></strong><span style="color:#828282"> @ 4 Jan 2014 11:49 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@shakti11094 vertex always less than equal to n</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69894"></a>
+<div id="c69894" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69894" class="active">My god. AC finally.</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/jujubi">jujubi</a></strong><span style="color:#828282"> @ 5 Jan 2014 01:56 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">My god. AC finally.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69901"></a>
+<div id="c69901" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69901" class="active">&quot; is it possible to delete</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/a9adi835812319">a9adi835812319</a></strong><span style="color:#828282"> @ 5 Jan 2014 02:29 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">" is it possible to delete edges in the graph so that the degree of each vertex in the graph will be equal 1 ?"  what if degree of each vertex is already 1 ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69930"></a>
+<div id="c69930" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69930" class="active">WHAT EXACTLY YOU MEAN BY THIS</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/bhaarat">bhaarat</a></strong><span style="color:#828282"> @ 5 Jan 2014 11:19 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">WHAT EXACTLY YOU MEAN BY THIS :
+Constraints
+
+1 = T = 10
+1 = n, m = 100</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69933"></a>
+<div id="c69933" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69933" class="active">1 = T = 10 1 = n, m = 100
+
+i</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/vidudaya">vidudaya</a></strong><span style="color:#828282"> @ 5 Jan 2014 11:29 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">1 = T = 10 1 = n, m = 100
+
+i think 
+
+1&lt;= T &lt;=10  and 1&lt;=n,m&lt;=100</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69956"></a>
+<div id="c69956" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69956" class="active">some more examples please!!!</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/milindshah077">milindshah077</a></strong><span style="color:#828282"> @ 5 Jan 2014 01:08 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">some more examples please!!!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69959"></a>
+<div id="c69959" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69959" class="active">do we have to check for self</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shaifz">shaifz</a></strong><span style="color:#828282"> @ 5 Jan 2014 01:36 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">do we have to check for self loops explicitly in code?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-69962"></a>
+<div id="c69962" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-69962" class="active">can there be a test case like</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/chandan721">chandan721</a></strong><span style="color:#828282"> @ 5 Jan 2014 01:54 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">can there be a test case like this??
+1
+1 1
+1 1</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70006"></a>
+<div id="c70006" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-70006" class="active">got stuck on this problem..</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/princerk">princerk</a></strong><span style="color:#828282"> @ 5 Jan 2014 04:34 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">got stuck on this problem..</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70012"></a>
+<div id="c70012" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-70012" class="active">can anybody provide</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/rkg90">rkg90</a></strong><span style="color:#828282"> @ 5 Jan 2014 04:44 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">can anybody provide clarification on example 3?
+I think if we try reducing the degree to 1 here, the graph will break. is it fine?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70013"></a>
+<div id="c70013" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-70013" class="active">are disconnected graphs ok?</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/anonymousins">anonymousins</a></strong><span style="color:#828282"> @ 5 Jan 2014 04:57 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">are disconnected graphs ok?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70015"></a>
+<div id="c70015" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-70015" class="active">getting WA..tired of it..can</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/vinod1054">vinod1054</a></strong><span style="color:#828282"> @ 5 Jan 2014 05:02 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">getting WA..tired of it..can anybody give me any critical test case</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70033"></a>
+<div id="c70033" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-70033" class="active">@all, if you look into the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/kuruma">kuruma</a></strong><span style="color:#828282"> @ 5 Jan 2014 05:35 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@all, if you look into the problem carefully, you will that disconnected graphs have to be possible... just, read statement carefully</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70041"></a>
+<div id="c70041" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-70041" class="active">@kuruma you are</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/anonymousins">anonymousins</a></strong><span style="color:#828282"> @ 5 Jan 2014 06:06 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@kuruma you are right.Definition of degree...:)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70051"></a>
+<div id="c70051" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-70051" class="active">are we always given connected</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shaifz">shaifz</a></strong><span style="color:#828282"> @ 5 Jan 2014 06:43 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">are we always given connected graphs as input??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70094"></a>
+<div id="c70094" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-70094" class="active">nice problem.. :-)</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sudit11">sudit11</a></strong><span style="color:#828282"> @ 5 Jan 2014 09:27 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">nice problem.. :-)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70098"></a>
+<div id="c70098" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-70098" class="active">n=m=100 in all test?</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/bakurits">bakurits</a></strong><span style="color:#828282"> @ 5 Jan 2014 09:32 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">n=m=100 in all test?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70137"></a>
+<div id="c70137" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-70137" class="active">is no. of vertices will be</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sbmc7">sbmc7</a></strong><span style="color:#828282"> @ 6 Jan 2014 12:05 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">is no. of vertices will be equal to n or it may be less than n</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-70142"></a>
+<div id="c70142" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/JAN14/problems/SEAGRP#comment-70142" class="active">Finally AC! :) Nice problem.</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/ameydhar">ameydhar</a></strong><span style="color:#828282"> @ 6 Jan 2014 12:56 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Finally AC! :) Nice problem.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<div class="box">
+  <h2 class="title"><hr></h2>  <div class="content"><span style="font-weight:bold;color:#777;">Need help? Post a comment. But before that please spare a moment to read the <a href="http://discuss.codechef.com/questions/855/what-kind-of-comment-should-i-post-on-the-problem-page" target="_blank">guidelines</a>.</span><form action="/comment/reply/4302280"  accept-charset="UTF-8" method="post" id="comment-form">
+<div><div class="form-item">
+ <label>Your name: </label>
+ adityax10
+</div>
+<div class="form-item" id="edit-comment-wrapper">
+ <label for="edit-comment">Comment: <span class="form-required" title="This field is required.">*</span></label>
+ <textarea cols="60" rows="5" name="comment" id="edit-comment"  class="form-textarea resizable required"></textarea>
+</div>
+<input type="hidden" name="form_build_id" id="form-fd8127f42a175b7ee748654d55ce89f9" value="form-fd8127f42a175b7ee748654d55ce89f9"  />
+<input type="hidden" name="form_token" id="edit-form-token" value="ee95c1b305830376891a589f82103040"  />
+<input type="hidden" name="form_id" id="edit-comment-form" value="comment_form"  />
+<input type="submit" name="op" id="edit-submit" value="Save"  class="form-submit" />
+
+</div></form>
+</div>
+</div>
+</div>
+                                                                </div>
+                                                                <div class="primary-colum-width-right">
+                                                                    <div class="content-spacer-b">
+                                                                        <div id="block-problem_status-0" class="block block-problem_status">
+  <div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>
+  <div class="content">
+        <div class="center topbox-small-1" style="margin-left:0px;"><h3>SUCCESSFUL SUBMISSIONS<h3></div><br/>
+		<div id="rankContentDiv" class="table-results maintable">
+				<p align="center"><img src="/sites/all/themes/abessive/images/ajax-loader.gif" /> Fetching successful submissions</p>
+				<input type="hidden" id="pcode" value="SEAGRP" name=   "pcode" />
+				<input type="hidden" id="ccode" value="JAN14" name=   "pcode" />
+				<input type="hidden" name="userid" id="userid" value="102389" />
+			<script type="text/javascript">
+				onload_getpage_ssubmissions("next");
+			</script>
+		</div>  </div>
+  <div class="r5"></div><div class="r4"></div><div class="r3"></div><div class="r2"></div><div class="r1 b"></div>
+</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <img class="content-wrapper-header" src="/sites/all/themes/abessive/images/content-wrapper-bootm-big.gif"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                                    <div id="footer" class="wrapper">
+                        <!--<div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>-->
+                        <div class="content clear-block">
+                            <!-- Footer Contents -->
+                            <div id="block-block-13" class="block block-block block-header">
+  <div class="content">
+        <script language="javascript" type="text/javascript">
+function formatTime(ts) {
+  now = new Date(ts);
+ 
+  localtime = new Date();
+  hour = now.getHours();
+  min = now.getMinutes();
+  sec = now.getSeconds();
+  
+  if (min <= 9) {
+	 min = "0" + min;
+  }
+  if (sec <= 9) {
+	 sec = "0" + sec;
+  }
+  if (hour > 12) {
+	 hour = hour - 12;
+	 add = " PM";
+  } else {
+	 hour = hour;
+	 add = " AM";
+  }
+  if (hour == 12) {
+	 add = " PM";
+  }
+  if (hour == 00) {
+	 hour = "12";
+  }
+	
+  $('#server-time').html(((hour<=9) ? "0" + hour : hour) + ":" + min + ":" + sec + add);
+  
+  nextSec = (now.getTime() + 1000);
+  
+  setTimeout("formatTime("+nextSec+")", 1000);
+}
+function getDtTimeZone() 
+{
+var rightNow = new Date();
+var toDay = new Date(rightNow.getFullYear(), 0, 1, 0, 0, 0, 0);
+var temp = toDay.toGMTString();
+var date2 = new Date(temp.substring(0, temp.lastIndexOf(" ") -1));
+var stdTime = (toDay - date2) / (1000 * 60 * 60);
+return stdTime;
+}
+/*var d=new Date();
+$.ajax({
+url: '/umtza',
+type:'POST',
+data: 'umtza='+d.toString(),
+});
+*/
+</script>
+<div id="disclaimer">CodeChef is a non-commercial competitive programming community</div>
+<div class="inner-wrapper">
+<div class="cols-2">
+<div id="secondary-nav">
+<ul>
+    <li><a href="http://www.codechef.com/aboutus/">About CodeChef</a></li>
+    <li><a target="_blank" href="http://www.directi.com/">About Directi</a></li>
+    <li><a href="http://www.codechef.com/ceoscorner/">CEO's Corner</a></li>
+    <li><a href="http://www.codechef.com/c-programming">C-Programming</a></li>
+    <li><a href="http://www.codechef.com/Programming-Languages">Programming Languages</a></li>
+    <li><a href="http://www.codechef.com/contactus">Contact Us</a></li>
+</ul>
+</div>
+<div id="copyright" class="cols-2">&copy; 2009 <a style="color: rgb(0, 0, 0);" href="http://www.directi.com">Directi Group</a>.  All Rights Reserved.  CodeChef uses SPOJ &copy; by <a style="color: rgb(0, 0, 0);" href="http://www.sphere-research.com">Sphere Research Labs</a></div>
+<div id="copyright-msg">In order to report copyright violations of any kind, send in an email to <a href="mailto:copyright@codechef.com">copyright@codechef.com</a></div>
+</div>
+<div align="right" class="cols-2-right" style="float:right;">
+<div id="sponsor-strip"><a target="_blank" href="http://www.directi.com"><img alt="CodeChef a product of Directi" src="/sites/all/themes/abessive/images/footer-sponsor-strip.gif" /></a><br />
+<span>The time now is: <span id="server-time"></span></span>
+				<script language='javascript'>
+						formatTime('January 06, 2014 09:18:30');
+					</script></div>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-53602-42");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+
+<!-- Google Code for Visitors that do not sign-up Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1066618556;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "666666";
+var google_conversion_label = "gbUUCPTlhAIQvJ3N_AM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1066618556/?label=gbUUCPTlhAIQvJ3N_AM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!-- Google Code for RM codechef Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 968176136;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "iDk7CPDZ7wMQiOTUzQM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/968176136/?label=iDk7CPDZ7wMQiOTUzQM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<div class='cc-footer-seo'>
+<span><a href='/'>CodeChef</a> - A Platform for Aspiring Programmers</span>
+<p>CodeChef was created as a platform to help programmers make it big in the world of algorithms, <strong>computer programming</strong> and <strong>programming contests</strong>. At CodeChef we work hard to revive the geek in you by hosting a <strong>programming contest</strong> at the start of the month and another smaller programming challenge in the middle of the month. We also aim to have training sessions and discussions related to <strong>algorithms, binary search</strong>, technicalities like <strong>array size</strong> and the likes. Apart from providing a platform for <strong>programming competitions</strong>, CodeChef also has various algorithm tutorials and forum discussions to help those who are new to the world of <strong>computer programming</strong>.</p>
+<p></p>
+<span><a href='/problems/easy'>Practice Section</a> - A Place to hone your 'Computer Programming Skills'</span>
+<p>Try your hand at one of our many practice problems and submit your solution in a language of your choice. Our <strong>programming contest</strong> judge accepts solutions in over 35+ programming languages. Preparing for coding contests were never this much fun! Receive points, and move up through the CodeChef ranks. Use our practice section to better prepare yourself for the multiple <strong>programming challenges</strong> that take place through-out the month on CodeChef. </p>
+<p></p>
+<span><a href='/contests/'>Compete</a> - Monthly Programming Contests and Cook-offs</span>
+<p>Here is where you can show off your <strong>computer programming</strong> skills. Take part in our 10 day long monthly <strong>coding contest</strong> and the shorter format Cook-off <strong>coding contest</strong>. Put yourself up for recognition and win great prizes. Our <strong>programming contests</strong> have prizes worth up to Rs.20,000 and $700lots more CodeChef goodies up for grabs. </p>
+<p></p>
+<span><a href='http://discuss.codechef.com/'>Discuss</a></span>
+<p>Are you new to <strong>computer programming</strong>? Do you need help with algorithms? Then be a part of CodeChef's Forums and interact with all our programmers - they love helping out other programmers and sharing their ideas. Have discussions around <strong>binary search, array size, branch-and-bound, Dijkstra's algorithm, Encryption algorithm</strong> and more by visiting the CodeChef Forums and Wiki section.</p>
+<p></p>
+<span><a href='/community'>CodeChef Community</a></span>
+<p>As part of our Educational initiative, we give institutes the opportunity to associate with CodeChef in the form of Campus Chapters. Hosting <strong>online programming competitions</strong> is not the only feature on CodeChef. You can also host a <strong>coding contest</strong> for your institute on CodeChef, organize an <strong>algorithm</strong> event and be a guest author on our blog. </p>
+<p></p>
+<span><a href='/goforgold'>Go For Gold</a></span>
+<p>The Go for Gold Initiative was launched about a year after CodeChef was incepted, to help prepare Indian students for the <strong>ACM ICPC</strong> World Finals competition. In the run up to the <strong>ACM ICPC</strong> competition, the Go for Gold initiative uses CodeChef as a platform to train students for the <strong>ACM ICPC</strong> competition via multiple warm up contests. As an added incentive the Go for Gold initiative is also offering over Rs.8 lacs to the Indian team that beats the 29th position at the <strong>ACM ICPC</strong> world finals. Find out more about the Go for Gold and the <strong>ACM ICPC</strong> competition <a href="/goforgold">here</a>.</p>
+</div>  </div>
+</div>
+<div id="block-block-48" class="block block-block block-header">
+  <div class="content">
+        <script type ='text/javascript' src ='/misc/jquery.cookie.js'>  </script><script type ='text/javascript' src ='/misc/notification.js'>  </script>  </div>
+</div>
+                        </div>
+                    </div>
+                                      <div id="fb-root"></div>
+      <script type="text/javascript">
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId  : '191217060453',
+            status : true, // check login status
+            cookie : true, // enable cookies to allow the server to access the session
+            xfbml  : true,
+            logging: '0',
+            channelURL: 'http://www.codechef.com/sites/all/modules/fbconnect/channel.html',
+            oauth : true
+          });
+
+          jQuery(document).trigger('fb:init');
+        };
+
+        (function() {
+          var e = document.createElement('script');
+          e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+          e.async = true;
+          document.getElementById('fb-root').appendChild(e);
+        }());
+      </script>
+<div style="display: none"><form action="/JAN14/problems/SEAGRP?destination=node%2F4302280"  accept-charset="UTF-8" method="post" id="fbconnect-autoconnect-form">
+<div><input type="submit" name="op" id="edit-connect" value="Connect"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-4ecb34defb76da06a6028d6cd607c05a" value="form-4ecb34defb76da06a6028d6cd607c05a"  />
+<input type="hidden" name="form_token" id="edit-fbconnect-autoconnect-form-form-token" value="bebd909d193a1527d1fe05b108c83119"  />
+<input type="hidden" name="form_id" id="edit-fbconnect-autoconnect-form" value="fbconnect_autoconnect_form"  />
+
+</div></form>
+</div>            </center>
+    </body>
+</html>
